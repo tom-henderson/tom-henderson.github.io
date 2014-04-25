@@ -13,6 +13,12 @@
         </h3>
       </div>
 
+      {% if page.header %}
+    </div>
+    <div class="bigheader" style="background-image: url('/public/images/headers/{{ page.header }}'); height: 500px; background-size: cover; background-position: 50%; margin-top: -60px;"></div>
+    <div class="container content">
+      {% endif %}
+
       {{ content }}
 
       <div class="footer">
