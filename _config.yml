@@ -6,16 +6,16 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Poole
-tagline:          The Jekyll Butler
+title:            Tom Henderson
+tagline:          This is what I've worked out so far...
 description:      Base theme for Jekyll themes by @mdo.
-url:              http://getpoole.com
+url:              http://tom-henderson.github.io
 
 author:
-  name:           Mark Otto
+  name:           Tom Henderson
   url:            https://twitter.com/mdo
 
-paginate:         1
+paginate:         5
 
 # Custom vars
 version:          1.0.0
