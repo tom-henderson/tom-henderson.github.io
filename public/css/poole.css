@@ -317,6 +317,24 @@ tbody tr:nth-child(odd) th {
   letter-spacing: 0;
 }
 
+/*
+ * Big Header Image
+ *
+ * Large header image.
+ */
+
+.bigheader {
+  height: 500px;
+  background-size: cover;
+  background-position: 50%;
+  margin-top: -60px;
+}
+
+@media only screen and (max-width: 480px) {
+  .bigheader {
+    height: 300px;
+  }
+}
 
 /*
  * Posts and pages
