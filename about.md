@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-header: blt.jpg
+header: catan.jpg
 ---
 
 <p class="message">
