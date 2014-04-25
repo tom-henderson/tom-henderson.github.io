@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+header: blt.jpg
 ---
 
 <p class="message">
