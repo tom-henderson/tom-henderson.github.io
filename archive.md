@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Archive
+header: puzzle.jpg
 ---
 
 {% for post in site.posts %}
