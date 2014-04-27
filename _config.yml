@@ -13,7 +13,7 @@ url:              http://tom-henderson.github.io
 
 author:
   name:           Tom Henderson
-  url:            https://twitter.com/mdo
+  url:            http://tom-henderson.github.io
 
 paginate:         1
 
@@ -21,4 +21,4 @@ paginate:         1
 version:          1.0.0
 
 github:
-  repo:           https://github.com/poole/poole
+  repo:           https://github.com/tom-henderson/tom-henderson.github.io
