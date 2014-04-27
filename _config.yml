@@ -15,7 +15,7 @@ author:
   name:           Tom Henderson
   url:            http://tom-henderson.github.io
 
-paginate:         1
+#paginate:         1
 
 # Custom vars
 version:          1.0.0

@@ -2,6 +2,7 @@
 layout: page
 title: Archive
 header: puzzle.jpg
+norecent: true
 ---
 
 {% for post in site.posts %}

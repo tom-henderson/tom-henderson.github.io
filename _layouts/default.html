@@ -12,19 +12,20 @@
           <small>{{ site.tagline }}</small>
         </h3>
       </div>
-
-      {% if page.header %}
     </div>
+
+    {% if page.header %}
     <div class="bigheader" style="background-image: url('/public/images/headers/{{ page.header }}')"></div>
+    {% endif %}
+
     <div class="container content">
-      {% endif %}
-
       {{ content }}
+      {% include recent.html %}
+    </div>
 
+    <div class="container content">
       <div class="footer">
-        <p>
-          &copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.
-        </p>
+        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</p>
       </div>
     </div>
 
