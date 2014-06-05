@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Home
-header: blt.jpg
+header: music.jpg
 ---
 
 {% include profile-urls.md %}
