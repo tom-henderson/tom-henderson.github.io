@@ -4,6 +4,14 @@ title: Home
 header: blt.jpg
 ---
 
+ * [Facebook](https://www.facebook.com/tom.henderson.nz)
+ * [LinkedIn](http://www.linkedin.com/profile/view?id=345864950&trk=nav_responsive_tab_profile)
+ * [Twitter](https://twitter.com/tomhenderson)
+ * [Instagram](http://instagram.com/tomhenderson)
+ * [Delicious](https://delicious.com/tomhenderson)
+ * [GitHub](https://github.com/tom-henderson)
+ * [Gists](https://gist.github.com/)
+
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
