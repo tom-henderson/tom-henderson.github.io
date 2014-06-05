@@ -5,7 +5,7 @@ header: blt.jpg
 ---
 
  * [Facebook](https://www.facebook.com/tom.henderson.nz)
- * [LinkedIn](http://www.linkedin.com/profile/view?id=345864950&trk=nav_responsive_tab_profile)
+ * [LinkedIn](http://nz.linkedin.com/in/tomhendersonnz)
  * [Twitter](https://twitter.com/tomhenderson)
  * [Instagram](http://instagram.com/tomhenderson)
  * [Delicious](https://delicious.com/tomhenderson)
