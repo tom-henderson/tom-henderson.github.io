@@ -6,11 +6,11 @@ header: blt.jpg
 
  * [Facebook](https://www.facebook.com/tom.henderson.nz)
  * [LinkedIn](http://nz.linkedin.com/in/tomhendersonnz)
- * [Twitter](https://twitter.com/tomhenderson)
- * [Instagram](http://instagram.com/tomhenderson)
  * [Delicious](https://delicious.com/tomhenderson)
  * [GitHub](https://github.com/tom-henderson)
  * [Gists](https://gist.github.com/)
+ * [Twitter](https://twitter.com/tomhenderson)
+ * [Instagram](http://instagram.com/tomhenderson)
 
 <div class="posts">
   {% for post in paginator.posts %}
