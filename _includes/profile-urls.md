@@ -2,6 +2,6 @@
  * [LinkedIn](http://nz.linkedin.com/in/tomhendersonnz)
  * [Delicious](https://delicious.com/tomhenderson)
  * [GitHub](https://github.com/tom-henderson)
- * [Gists](https://gist.github.com/)
+ * [Gists](https://gist.github.com/tom-henderson)
  * [Twitter](https://twitter.com/tomhenderson)
  * [Instagram](http://instagram.com/tomhenderson)
