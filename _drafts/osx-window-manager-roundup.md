@@ -4,6 +4,8 @@ title: OS X Window Manager Roundup
 header: window.jpg
 ---
 
+See also https://news.ycombinator.com/item?id=7982514
+
 ### Keyboard Control
 
 * [SizeUp](http://www.irradiatedsoftware.com/sizeup/)
