@@ -42,6 +42,7 @@ Install Applications
  * Evernote
  * Notational Velocity
  * Transmission
+ * Beamer
 
 Install System Utilities
 ------------------------
