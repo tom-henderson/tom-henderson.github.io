@@ -6,7 +6,7 @@ header: closeup-macbook.jpg
 
 I've always been slighly proud of the fact that my OS X home folder has stayed with me for so long, across so many devices. It started life on our PowerMac G4, and has stayed with me through my 12" Powerbook, and my previous 13" Powerbook since 2010. 
 
-Apple's Migration Assistant has come a long way since the first time I used it, and for users at work I don't hesitate to use it to move their settings from machine to machine. When an account has been around as long as ming though it does pick up a fair amount of cruft, so I figured it was time to rebuild.
+Apple's Migration Assistant has come a long way since the first time I used it, and for users at work I don't hesitate to use it to move their settings from machine to machine. When an account has been around as long as mine though it does pick up a fair amount of cruft, so I figured it was time to rebuild.
 
 When my new 13" Retina MacBook arrived (3GHz i7, 16GB, 512GB) I decided to rebuild from scratch, installing only what I actually needed. 
 
