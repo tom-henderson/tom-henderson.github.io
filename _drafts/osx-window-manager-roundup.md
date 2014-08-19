@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OS X Window Manager Roundup
-header: window.jpg
+header: keyboard.jpg
 ---
 
 See also Hacker News [thread](https://news.ycombinator.com/item?id=7982514).
