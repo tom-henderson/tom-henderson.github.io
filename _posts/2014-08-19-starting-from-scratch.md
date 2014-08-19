@@ -22,7 +22,7 @@ Installing Dropbox pulls down my 1Password database. Next I installed 1Password 
 
 ## Copy Files
 
-To make things easier I synced up my SuperDuper back drive and then attached it to the new machine and copied the files from there. I hadn't noticed that the Sites folder was no longer included in the default home directory. See the fix below to get it working again.
+To make things easier I synced my SuperDuper backup drive, attached it to the new machine, and copied the files from there. I hadn't noticed that the Sites folder was no longer included in the default home directory. See the fix below to get it working again.
 
  * ~/Desktop
  * ~/Documents
