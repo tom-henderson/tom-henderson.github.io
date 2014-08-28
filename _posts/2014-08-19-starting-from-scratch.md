@@ -158,3 +158,5 @@ It took far to long to get my work monitor looking right. I'm not doing it again
 ## Finishing Up
 
 At this point I can get 99% of my work done without any issue. I'll keep carrying around my backup drive from the old MacBook for now, but I should be able to recover any ~/Library files I need from BackBlaze if I do come across anything that's worth migrating over.
+
+As a last step I deleted the iWork/iLife apps I don't use (Pages, Numbers, Keynote, iMovie and GarageBand), to free over 5.5GB of space. They may be great apps, but I'd rather just download them again if I need them.
