@@ -1,24 +1,81 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+# Build settings
+markdown: redcarpet
+highlighter: pygments
 
-# Permalinks
-permalink:        pretty
+# Site settings
+title: "Tom Henderson"
+description: > # this means to ignore newlines until "email:"
+   What I've worked out so far
 
-# Setup
-title:            Tom Henderson
-tagline:          What I've worked out so far...
-description:      Base theme for Jekyll themes by @mdo.
-url:              http://tom-henderson.github.io
+email: tomhenderson@mac.com
+#blog logo
+logo: "/assets/images/df_logo.jpg"
+# blog cover
+cover: "/assets/images/pepsi.jpg"
 
-author:
-  name:           Tom Henderson
-  url:            http://tom-henderson.github.io
+name: 'Tom Henderson'
+author: 'Tom Henderson'
+author_image: "/assets/images/author.jpg"
 
-#paginate:         1
+paginate:	5
 
-# Custom vars
-version:          1.0.0
+url: "http://tom-henderson.github.io/" # the base hostname & protocol for your site
+baseurl: ""
 
-github:
-  repo:           https://github.com/tom-henderson/tom-henderson.github.io
+# social icons and sharing options
+social:
+  - icon:	github
+    url:	https://github.com/tom-henderson
+    desc:	Fork me on github
+    share_url:
+    share_title:
+    share_link:
+
+  - icon: instagram
+    url:  http://instagram.com/tomhenderson
+    desc: Instagram
+    share_url:
+    share_title:
+    share_link:
+
+  - icon: delicious
+    url:  http://delicious.com/tomhenderson
+    desc: Delicious Bookmarks
+    share_url:
+    share_title:
+    share_link:
+
+  - icon: rss
+    url:  /feed.xml
+    desc: Subscribe
+    share_url:
+    share_title:
+    share_link:
+
+  - icon: envelope
+    url:  mailto:tomhenderson@mac.com
+    desc: Email
+    share_url:
+    share_title:
+    share_link:
+
+# - icon: twitter
+#   url:  https://twitter.com/tomhenderson
+#   desc: Follow me on twitter
+#   share_url: http://twitter.com/share
+#   share_title: ?text=
+#   share_link: "&amp;url="
+
+#  - icon:  facebook
+#    url: https://facebook.com/???
+#    desc: Connect with me facebook
+#    share_url: https://www.facebook.com/sharer.php
+#    share_title: ?t=
+#    share_link: "&amp;u="
+
+#  - icon:	google-plus
+#    url:	https://google.com/???
+#    desc:	Add me on google+
+#    share_url:
+#    share_title:
+#    share_link:

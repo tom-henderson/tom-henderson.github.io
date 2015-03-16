@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Starting from scratch
-header: closeup-macbook.jpg
+# image: /assets/article_images/generic/closeup-macbook.jpg
 ---
 
 I've always been slighly proud of the fact that my OS X home folder has stayed with me for so long, across so many devices. It started life on our PowerMac G4, and has stayed with me through my 12" Powerbook, and my previous 13" Powerbook since 2010. 

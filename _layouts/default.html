@@ -1,33 +1,39 @@
+---
+---
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<html>
 
   {% include head.html %}
 
   <body>
 
-    <div class="container content">
-      <div class="masthead">
-        <h3 class="masthead-title">
-          <a href="/" title="Home">{{ site.title }}</a>
-          <small>{{ site.tagline }}</small>
-        </h3>
+    <a href="/" class="logo-readium"><span class="logo" style="background-image: url({{ site.logo }})"></span></a>
+
+    <div class="page-content">
+      <div class="wrapper">
+
+        <div class="teaserimage">
+            <div class="teaserimage-image" {% if site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
+                Teaser Image
+            </div>
+        </div>
+
+        <header class="blog-header">
+          <h1 class="blog-title">{{ site.title }}</h1>
+          <h2 class="blog-description">{{ site.description }}</h2>
+          {% include nav_bar.html %}
+        </header>
+
+        <main class="content" role="main">
+          {{ content }}
+        </main>
+
       </div>
     </div>
 
-    {% if page.header %}
-    <div class="bigheader" style="background-image: url('/public/images/headers/{{ page.header }}')"></div>
-    {% endif %}
-
-    <div class="container content">
-      {{ content }}
-      {% include recent.html %}
-    </div>
-
-    <div class="container content">
-      <div class="footer">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }} &bullet; <a href="/about">About</a> &bullet; <a href="/archive">Archive</a> &bullet; <a href="/atom.xml">Feed</a> </p>
-      </div>
-    </div>
+    {% include page_footer.html %}
+    {% include javascripts.html %}
 
   </body>
+
 </html>

@@ -1,14 +1,15 @@
 ---
 layout: page
 title: About
-header: catan.jpg
+image: /assets/article_images/puzzle.jpg
+permalink: /about/
 ---
 
-## Setup
+# Setup
 
-This site is built using [Jekyll](http://jekyllrb.com) and hosted on [GitHub Pages](https://pages.github.com). The base theme is [Poole](http://getpoole.com/), with a few customisations.
+This site is built using [Jekyll](http://jekyllrb.com) and hosted on [GitHub Pages](https://pages.github.com). The base theme is [Mediator](https://github.com/dirkfabisch/mediator), with a few customisations.
 
-## Links
+# Links
 
 You can find me online at the links below. 
 
