@@ -13,25 +13,17 @@
 
 
   $(document).ready(function(){
-
-    var $window = $(window),
-    $image = $('.post-image-image, .teaserimage-image');
     
     layout_page();
-    
-    $window.on('focus', function(){
-      layout_page();
-    });
+    $(window).on('focus', layout_page);
+    $(window).on('resize', layout_page);
 
-    $window.on('resize', function(){
-      layout_page();
-    });
-
-    $window.on('scroll', function() {
-      var top = $window.scrollTop();
+    $(window).on('scroll', function() {
+      var top = $(window).scrollTop();
 
       if (top < 0 || top > 1500) { return; }
-      $image
+
+      $('.post-image-image, .teaserimage-image')
         .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
         .css('opacity', 1-Math.max(top/700, 0));
     });
