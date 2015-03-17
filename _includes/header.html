@@ -8,7 +8,7 @@
       <h1 class="post-title">{{ page.title }}</h1>
 
       <div class="cf post-meta-text">
-        <div class="author-image" style="background-image: url({{ site.email | get_gravatar }}&s=100)">Blog Logo</div>
+        <div class="author-image" style="background-image: url({{ site.avatar }})">Blog Logo</div>
         <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
         {% if page.layout == 'post' %}
           on
