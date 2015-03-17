@@ -8,14 +8,12 @@ description: > # this means to ignore newlines until "email:"
    What I've worked out so far
 
 email: tomhenderson@mac.com
-#blog logo
-logo: "/assets/images/df_logo.jpg"
+
 # blog cover
 cover: "/assets/images/pepsi.jpg"
 
 name: 'Tom Henderson'
 author: 'Tom Henderson'
-author_image: "/assets/images/author.jpg"
 
 paginate:	5
 
