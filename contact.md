@@ -5,7 +5,7 @@ image: /assets/article_images/music.jpg
 permalink: /contact/
 ---
 
-# Contact
+## Contact
 
 You can find me online at the links below. 
 

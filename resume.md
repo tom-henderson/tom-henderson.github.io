@@ -5,5 +5,5 @@ image: /assets/article_images/generic/keyboard.jpg
 permalink: /resume/
 ---
 
-# Resume
+## Resume
 
