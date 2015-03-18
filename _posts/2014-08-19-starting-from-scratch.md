@@ -142,7 +142,7 @@ Do this before opening Messages. Restores all the message history, attachments e
 
 Why do they insist on dumping this in ~/Documents?
 
-    mv ~/Documents ~/Library/Preferences
+    mv ~/Documents/Microsoft\ User\ Data ~/Library/Preferences
 
 ### ColorSync Profiles
 
