@@ -34,7 +34,7 @@ title: Home
           <header class="post-header">
             <h2 class="post-title" itemprop="name">
               {% if post.link %}
-                <a href="{{ post.link }}" itemprop="url"><small><i class="fa fa-external-link"></i></small> 
+                <a href="{{ post.url }}" itemprop="url"><small><i class="fa fa-external-link"></i></small></a> <a href="{{ post.link }}" itemprop="url">
               {% else %}
                 <a href="{{ post.url }}" itemprop="url">
               {% endif %}
