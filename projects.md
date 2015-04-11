@@ -7,11 +7,11 @@ permalink: /projects/
 
 ## Projects
 
-### Shaky Isles Wholesale Ordering
+### Shaky Isles Wholesale
 <a class="icon-external-link" href="http://wholesale.shakyisles.co.nz"><i class="fa fa-external-link"></i></a>
 
 
-Built with Django, this ordering platform integrates directly with the point-of-sale system at the bakery in order to batch process orders directly onto customer accounts. Customers can view and manage their orders themselves and view invoices online (or downladed in PDF format) as soon as the order is processed.
+Built with Django, this ordering platform integrates directly with the bakery's point-of-sale system, to batch process orders directly onto customer accounts. Customers can view and manage their orders, and view invoices online (or downlad in PDF format) as soon as the order is processed.
 
 ![Orders](/assets/images/projects/shaky-orders.png)
 ![Invoices](/assets/images/projects/shaky-invoices.png)
