@@ -16,7 +16,7 @@ avatar: "/assets/images/avatar.jpg"
 name: 'Tom Henderson'
 author: 'Tom Henderson'
 
-paginate:	5
+paginate:	7
 
 url: "http://tom-henderson.github.io/" # the base hostname & protocol for your site
 baseurl: ""
