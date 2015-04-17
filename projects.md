@@ -13,6 +13,7 @@ permalink: /projects/
 
 Built with Django, this ordering platform integrates directly with the bakery's point-of-sale system, to batch process orders directly onto customer accounts. Customers can view and manage their orders, and view invoices online (or downlad in PDF format) as soon as the order is processed.
 
+![Log In](/assets/images/projects/shaky-log-in.png)
 ![Orders](/assets/images/projects/shaky-orders.png)
 ![Invoices](/assets/images/projects/shaky-invoices.png)
 
