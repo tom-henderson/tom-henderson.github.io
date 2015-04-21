@@ -15,10 +15,10 @@ I added a new machine user to our GitHub account and set it up with ssh keys, cr
     git commit -a -m "Wiki backup $(date +%F-%s)"
     git push
 
-![Backup History](/assets/images/github-wiki.png)
+![Backup History](/assets/images/posts/github-wiki.png)
 
 Git is smart about this, so if nothing has changed, nothing is pushed. Backup history can be easily viewed by looking at the commits history.
 
 The best part about this is that since the data is just text, all our documentation is now available directly on GitHub. In the event of a major outage I can browse the wiki pages directly on GitHub.
 
-![Accessing Wiki Pages on GitHub](/assets/images/github-wiki-pages.png)
+![Accessing Wiki Pages on GitHub](/assets/images/posts/github-wiki-pages.png)
