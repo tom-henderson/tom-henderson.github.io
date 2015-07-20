@@ -87,6 +87,7 @@ Git isn't actually installed by default, but if you run it you get an install pr
 
 Worth rebooting after this. 
 
+{% highlight bash %}
     cd ~
     git clone https://github.com/tom-henderson/dotfiles.git
     ln -s dotfiles/bash_profile .bash_profile
@@ -96,6 +97,7 @@ Worth rebooting after this.
     ./dotfiles/keyboard-shortcuts.sh
     ./dotfiles/config-osx.sh
     reboot
+{% endhighlight %}
 
 ### SSH
 
