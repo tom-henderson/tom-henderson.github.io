@@ -1,6 +1,7 @@
 # Build settings
 markdown: redcarpet
 highlighter: pygments
+gems: [jekyll-paginate, jekyll-gist]
 
 # Site settings
 title: "Tom Henderson"
