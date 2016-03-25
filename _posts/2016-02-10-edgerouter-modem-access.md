@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Accesssing bridged modem through EdgeRouter
+title: Accessing bridged modem through EdgeRouter
 ---
 
 I needed a small tweak to my EdgeRouter config to let me connect to my [bridged VDSL modem](https://www.spark.co.nz/help/internet-data/equipment/huawei/hg630b-gateway/setup-bridge-mode-huawei-hg630b/). The EdgeRouter is connected to the modem on eth0.
