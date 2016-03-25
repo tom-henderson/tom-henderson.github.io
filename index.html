@@ -33,13 +33,7 @@ title: Home
         <div class="article-item">
           <header class="post-header">
             <h2 class="post-title" itemprop="name">
-              {% if post.link %}
-                <a href="{{ post.url }}" itemprop="url"><small><i class="fa fa-external-link"></i></small></a> <a href="{{ post.link }}" itemprop="url">
-              {% else %}
-                <a href="{{ post.url }}" itemprop="url">
-              {% endif %}
-                {{ post.title }}
-              </a>
+                <a href="{{ post.url }}" itemprop="url">{{ post.title }}</a>
             </h2>
           </header>
           <section class="post-excerpt" itemprop="description">
