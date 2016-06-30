@@ -4,7 +4,7 @@ title: EdgeRouter PPTP VPN with Dynamic IP Address
 ---
 
 # Dynamic DNS
-Setting up VPN remote access on the EdgeRouter is a pretty straightforward, but without a static IP address we won't be able to connect back home if the external IP changes. To get around this we can use a dynamic DNS provider like noip.com and have the EdgeRouter update the IP if it changes. After setting up an account and a new dynamic hostname, we can configure the router with:
+Setting up VPN remote access on the EdgeRouter is a pretty straightforward, but without a static IP address we won't be able to connect back home if the external IP changes. To get around this we can use a dynamic DNS provider like [noip.com](http://www.noip.com/) and have the EdgeRouter update the IP if it changes. After setting up an account and a new dynamic hostname, we can configure the router with:
 
 {% gist 118de8434b113adb9d03 %}
 
