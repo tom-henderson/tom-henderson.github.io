@@ -5,7 +5,7 @@ title: Site to Site VPN into Azure with EdgeRouter
 
 These scripts are based on the instructions in the [Azure Documentation](https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-create-site-to-site-rm-powershell/).
 
-The first step is to set up the Azure side. [This script](](https://gist.github.com/tom-henderson/7468f5bc1b5d90305dd7f120200a6088#file-azure-vpn-ps1) ) can be run from any machine with the [AzureRM PowerShell modules](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/) installed. Be sure to read it through and update the variables at the top before you run it.
+The first step is to set up the Azure side. [This script](https://gist.github.com/tom-henderson/7468f5bc1b5d90305dd7f120200a6088#file-azure-vpn-ps1) can be run from any machine with the [AzureRM PowerShell modules](https://azure.microsoft.com/en-us/documentation/articles/powershell-install-configure/) installed. Be sure to read it through and update the variables at the top before you run it.
 
 First we need a resource group to put the Azure objects in, into which we create a new Virtual Network, and create two subnets inside. The first subnet "GatewaySubnet" is important, and must be named exactly that in order to work correctly. The other subnet ("AzureSubnet") is where we will be attaching our VMs, and can be named anything you like. You can add additional subnets to the Virtual Network later to organise your Azure network.
 
