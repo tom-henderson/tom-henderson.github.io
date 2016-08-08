@@ -28,7 +28,7 @@ Write-Host $remoteGatewayIP.IpAddress
 
 If you need to add additional VPNs - perhaps to a second subscription - set up the Azure side, and create a new site-to-site-peer on the EdgeRouter. You can reuse the same esp-group and ike-group.
 
-After saving the configuration you should be able to see the active connection in the EdgeRouter CLI with `show vpn ipsec status', which should return something like:
+After saving the configuration you should be able to see the active connection in the EdgeRouter CLI with `show vpn ipsec status`, which should return something like:
 
 {% highlight bash %}
 IPSec Process Running PID: 1703
