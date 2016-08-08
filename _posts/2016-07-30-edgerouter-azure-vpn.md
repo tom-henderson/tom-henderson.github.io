@@ -30,7 +30,7 @@ If you need to add additional VPNs - perhaps to a second subscription - set up t
 
 After saving the configuration you should be able to see the active connection in the EdgeRouter CLI with `show vpn ipsec status', which should return something like:
 
-{% highlight %}
+{% highlight bash %}
 IPSec Process Running PID: 1703
 
 1 Active IPsec Tunnels
