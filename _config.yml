@@ -38,9 +38,9 @@ social:
     share_title:
     share_link:
 
-  - icon: delicious
-    url:  http://delicious.com/tomhenderson
-    desc: Delicious Bookmarks
+  - icon: star-o
+    url:  https://frozen-plateau-22554.herokuapp.com/
+    desc: Bookmarks
     share_url:
     share_title:
     share_link:
