@@ -1,7 +1,9 @@
 # Build settings
 markdown: kramdown
 highlighter: rouge
-gems: [jekyll-paginate, jekyll-gist]
+plugins: 
+  - jekyll-paginate
+  - jekyll-gist
 
 # Site settings
 title: "Tom Henderson"
