@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Projects
-image: /assets/article_images/keyboard.jpg
+image: /assets/headers/keyboard.jpg
 permalink: /projects/
 ---
 

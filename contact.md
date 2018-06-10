@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contact
-image: /assets/article_images/music.jpg
+image: /assets/headers/music.jpg
 permalink: /contact/
 ---
 
