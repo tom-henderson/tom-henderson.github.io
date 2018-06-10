@@ -5,11 +5,11 @@ title: EdgeRouter Lite
 
 As part of a project to build a home lab for testing, I'm upgrading my home network. My first addition is an Ubiquiti [EdgeRouter Lite](https://www.ubnt.com/edgemax/edgerouter-lite/).
 
-![EdgeRouter Lite ERLite-3](/assets/images/posts/edgerouter-lite-angle.jpg)
+![EdgeRouter Lite ERLite-3](/assets/images/posts/2016-02-07-edgerouter/edgerouter-lite-angle.jpg)
 
 I have the ERL connected to my VDSL modem (bridged) on eth0, and to my Netgear AP on eth1. I will be creating a DHCP LAN on each of eth1 and eth2, and setting up a pppoe interface on eth0 to connect to the [Internet](https://www.spark.co.nz/help/internet-email/getstarted/broadband-settings-for-third-party-modems/). Eth1 will be connected to my existing wireless router, and eth2 will be connected to my XBox.
 
-![Diagram](/assets/images/posts/home-network-v1.png)
+![Diagram](/assets/images/posts/2016-02-07-edgerouter/home-network-v1.png)
 
 Fortunately, after upgrading the firmware to version 1.8 almost all of this can be done using the setup wizard. The only remaining settings I need to adjust are to set up a couple of DHCP reservations and port forwarding rules to keep Plex and Transmission working on my server.
 
