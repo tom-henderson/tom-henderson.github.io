@@ -26,7 +26,8 @@
     <h5 class="index-headline featured"><span>Supported by</span></h5>
     <footer class="site-footer">
       <section class="poweredby">Published with <a href="http://jekyllrb.com"> Jekyll</a></section>
-      <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> RSS Feed.</span></a>
+      {% if page.image_credit %}<a class="subscribe" href="{{ page.image_url }}"><i class="fa fa-camera"></i> Photo by {{ page.image_credit }}.</a><br />{% endif %}
+      <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"><i class="fa fa-rss"></i> RSS Feed.</a>
       <div class="inner">
         <section class="copyright">&copy; {{ site.time | date: '%Y' }} <a href="{{@blog.url}}/">{{site.author}}</a><br>All rights reserved.</section>
       </div>
