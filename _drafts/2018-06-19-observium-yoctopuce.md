@@ -5,83 +5,27 @@ title: Adding Yoctopuce Sensors to Observium
 
 I came across the [Yoctopuce](https://www.yoctopuce.com/) USB sensors recently and thought it might be fun to use one to monitor the closet I keep my network rack & servers in. I picked up one of the [Yocto-Meto](https://www.yoctopuce.com/EN/products/usb-environmental-sensors/yocto-meteo) sensors, which combines humidity, pressure, and temperature sensors, and hooked it up to the server with a USB cable. 
 
-/usr/local/lib/observium-agent/yoctopuce
-{% highlight python %}
-#!/usr/bin/python
+Observium primarily deals with SNMP, but also includes a [Unix Agent](http://docs.observium.org/unix_agent/) which allows it to collect other system and application metrics. The agent essentially executes a folder full of shell scripts, each of which is responsible for writing some application or service metrics to StdOut. 
 
-from yoctopuce.yocto_api import *
-from yoctopuce.yocto_temperature import *
-from yoctopuce.yocto_humidity import *
-from yoctopuce.yocto_pressure import *
+I wrote a short python script to poll the sensor and output the current values using the unix agent format, and saved it to `/usr/local/lib/observium-agent/yoctopuce`:
 
-errmsg = YRefParam()
-YAPI.RegisterHub("usb", errmsg)
+{% gist 9ebda921e2c1b85c535c3a9e495ec680 yoctopuce %}
 
-temperature = YTemperature.FirstTemperature()
-humidity = YHumidity.FirstHumidity()
-pressure = YPressure.FirstPressure()
+The agent is normally configured to execute using xinetd, but on macOS we can use launchctl to listen on a port and execute our script by adding the following to `~/Library/LaunchAgents/org.observium.agent.plist` and enabling it with `launchctl load ~/Library/LaunchAgents/org.observium.agent.plist`.
 
-print "<<<yoctopuce>>>"
-print "temperature:rack:{}".format(temperature.get_currentValue())
-print "humidity:rack:{}".format(humidity.get_currentValue())
-print "pressure:rack:{}".format(pressure.get_currentValue())
+{% gist 9ebda921e2c1b85c535c3a9e495ec680 org.observium.agent.plist %}
+
+After loading the agent it can be tested by running `telnet 127.0.0.1 36602`, which will spit out the output of the script above and then disconnect.
+
+{% highlight txt %}
+<<<yoctopuce>>>
+temperature:rack:20
+humidity:rack:50
+pressure:rack:1.0021
 {% endhighlight %}
 
-~/Library/LaunchAgents/org.observium.agent.plist
-{% highlight xml %}
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-    <key>Label</key>
-    <string>org.observium.agent</string>
-    <key>Program</key>
-    <string>/usr/local/lib/observium-agent/yoctopuce</string>
-    <key>Sockets</key>
-    <dict>
-        <key>Listeners</key>
-        <array>
-            <dict>
-                <key>SockServiceName</key>
-                <string>36602</string>
-            </dict>
-        </array>
-    </dict>
-    <key>inetdCompatibility</key>
-    <dict>
-        <key>Wait</key>
-        <false/>
-    </dict>
-</dict>
-</plist>
-{% endhighlight %}
+It took me a bit of digging around to work out what I needed to change to get this data into Observium. I'm running the CE edition, which is a bit out of date now so things could have changed since this release. Since `temperature`, `pressure` and `humidity` are already defined as sensor types in Observium, this seems to be all that's needed to get the sensors discovered. I saved it into `/opt/observium/includes/polling/unix-agent/yoctopuce.inc.php`, and after enabling unix agent polling for the server, Observium picks it up based on the `<<<yoctopuce>>>` header in the output.
 
-/opt/observium/includes/polling/unix-agent/yoctopuce.inc.php
-{% highlight php %}
-<?php
-global $agent_sensors;
-
-if (!empty($agent_data['yoctopuce']))
-{
-  $sensors = explode("\n", $agent_data['yoctopuce']);
-
-  if (count($sensors))
-  {
-    foreach ($sensors as $sensor)
-    {
-      list($sensortype, $key, $value) = explode(":", $sensor, 3);
-      $key = trim($key);
-      $value = trim($value);
-      $sensortype = trim($sensortype);
-      discover_sensor($valid['sensor'], $sensortype, $device, '', $key, 'yoctopuce', "$key", 1, $value, array(), 'agent');
-      $agent_sensors[$sensortype]['yoctopuce'][$key] = array('description' => "$key", 'current' => $value, 'index' => $key);
-    }
-  }
-  $valid_applications['yocopuce'] = 'yoctopuce';
-  echo(PHP_EOL);
-  unset($sensors);
-}
-// EOF
-{% endhighlight %}
+{% gist 9ebda921e2c1b85c535c3a9e495ec680 yoctopuce.inc.php %}
 
 ![Observium Minigraphs](/assets/images/posts/2018-06-19-observium-yoctopuce/charts.png)
