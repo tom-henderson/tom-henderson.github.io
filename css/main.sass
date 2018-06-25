@@ -44,6 +44,8 @@ body
   height: $rs*3
   overflow: hidden
   z-index: 99
+  @include respond-to(710)
+    display: none
   .logo
     display: block
     position: absolute
@@ -53,12 +55,6 @@ body
     height: $rs*3
     background-size: cover
     background-repeat: no-repeat
-
-@media screen and (max-width: 710px)
-  .logo-readium
-    display: none
-  .logo
-    display: none
 
 .teaserimage
   height: 450px
