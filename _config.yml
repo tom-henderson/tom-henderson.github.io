@@ -7,7 +7,7 @@ plugins:
 
 # Site settings
 title: "Tom Henderson"
-description: > # this means to ignore newlines until "email:"
+description: >
    What I've worked out so far
 
 email: tomhenderson@mac.com
@@ -19,65 +19,54 @@ avatar: "/assets/images/avatar.png"
 name: 'Tom Henderson'
 author: 'Tom Henderson'
 
-paginate:	7
+paginate: 7
 
-url: "http://tom-henderson.github.io/" # the base hostname & protocol for your site
+url: "http://tom-henderson.github.io/"
 baseurl: ""
+
+top_nav_pages:
+  - title: Blog
+    url: /
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Contact
+    url: /contact/
 
 # social icons and sharing options
 social:
-  - icon:	github
-    url:	https://github.com/tom-henderson
-    desc:	Fork me on github
+  - icon: github
+    url: https://github.com/tom-henderson
+    desc: Fork me on github
     share_url:
     share_title:
     share_link:
 
   - icon: instagram
-    url:  http://instagram.com/tomhenderson
+    url: http://instagram.com/tomhenderson
     desc: Instagram
     share_url:
     share_title:
     share_link:
 
   - icon: star-o
-    url:  https://frozen-plateau-22554.herokuapp.com/
+    url: https://frozen-plateau-22554.herokuapp.com/
     desc: Bookmarks
     share_url:
     share_title:
     share_link:
 
   - icon: rss
-    url:  /feed.xml
+    url: /feed.xml
     desc: Subscribe
     share_url:
     share_title:
     share_link:
 
   - icon: envelope
-    url:  mailto:tomhenderson@mac.com
+    url: mailto:tomhenderson@mac.com
     desc: Email
     share_url:
     share_title:
     share_link:
-
-# - icon: twitter
-#   url:  https://twitter.com/tomhenderson
-#   desc: Follow me on twitter
-#   share_url: http://twitter.com/share
-#   share_title: ?text=
-#   share_link: "&amp;url="
-
-#  - icon:  facebook
-#    url: https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
-
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:
