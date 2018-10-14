@@ -20,6 +20,8 @@ name: 'Tom Henderson'
 author: 'Tom Henderson'
 
 paginate: 7
+future: false
+show_drafts: false
 
 url: "http://tom-henderson.github.io/"
 baseurl: ""
