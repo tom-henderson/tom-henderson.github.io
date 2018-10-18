@@ -2,9 +2,9 @@
     <a name="reading-list"></a>
     {% for book in page.books %}
     <div class="book cf">
-        <h4>{{ book.title }} - {{ book.author }}</h4>
         <img class="book-cover" src="{{ page.covers_path }}{{ book.cover }}" />
-        <p>Rating: {{ book.rating }}</p>
+        <h4>{{ book.title }}<br /><small>{{ book.author }}</small></h4>
+        <div class="book-rating">{{ book.rating }}</div>
         <p>{{ book.comments }}</p>
     </div>
     {% endfor %}
