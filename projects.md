@@ -7,6 +7,14 @@ permalink: /projects/
 
 ## Projects
 
+### Bookmarks
+<a class="icon-github" href="https://github.com/tom-henderson/bookmarks"><i class="fa fa-github"></i></a>
+<a class="icon-external-link" href="https://frozen-plateau-22554.herokuapp.com/"><i class="fa fa-external-link"></i></a>
+
+To replace my del.icio.us account I built a simple CRUD bookmarks managager in Django and deployed on Heroku. It uses django-taggit for tagging and markdown for formatting the descriptions. I exported my existing bookmarks from del.icio.us, and imported them with a custom admin command.
+
+![Bookmarks](/assets/images/projects/bookmarks.png)
+
 ### Shaky Isles Wholesale
 
 Built with Django, this ordering platform integrates directly with the bakery's point-of-sale system, to batch process orders directly onto customer accounts. Customers can view and manage their orders, and view invoices online (or downlad in PDF format) as soon as the order is processed.
