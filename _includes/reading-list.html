@@ -2,10 +2,10 @@
     <a name="reading-list"></a>
     {% for book in page.books %}
     <div class="book cf">
-        <img class="book-cover" src="{{ page.covers_path }}{{ book.cover }}" />
+        {% if book.cover %}<img class="book-cover" src="{{ page.covers_path }}{{ book.cover }}" />{% endif %}
         <h4>{{ book.title }}<br /><small>{{ book.author }}</small></h4>
-        <div class="book-rating">{{ book.rating }}</div>
-        <p>{{ book.comments }}</p>
+        {% if book.rating %}<div class="book-rating">{{ book.rating }}</div>{% endif %}
+        {% if book.comments %}<p>{{ book.comments }}</p>{% endif %}
     </div>
     {% endfor %}
 </section>
