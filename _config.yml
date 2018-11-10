@@ -12,6 +12,8 @@ description: >
 
 email: tomhenderson@mac.com
 
+timezone: Pacific/Auckland
+
 # blog cover
 cover: "/assets/images/pepsi.jpg"
 avatar: "/assets/images/avatar.png"
