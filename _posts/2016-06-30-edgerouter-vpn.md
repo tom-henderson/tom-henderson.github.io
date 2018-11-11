@@ -1,6 +1,7 @@
 ---
 layout: post
 title: EdgeRouter PPTP VPN with Dynamic IP Address
+comments: true
 ---
 
 # Dynamic DNS

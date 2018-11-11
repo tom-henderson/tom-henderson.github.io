@@ -1,6 +1,7 @@
 ---
 layout: post
 title: EdgeRouter Lite 
+comments: true
 ---
 
 As part of a project to build a home lab for testing, I'm upgrading my home network. My first addition is an Ubiquiti [EdgeRouter Lite](https://www.ubnt.com/edgemax/edgerouter-lite/).
