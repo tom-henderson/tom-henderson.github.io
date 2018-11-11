@@ -24,6 +24,7 @@ author: 'Tom Henderson'
 paginate: 7
 future: false
 show_drafts: false
+comments: true
 
 url: "http://tom-henderson.github.io/"
 baseurl: ""
