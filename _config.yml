@@ -25,6 +25,9 @@ paginate: 7
 future: false
 show_drafts: false
 
+comments: true
+disqus_shortname: tom-henderson
+
 url: "http://tom-henderson.github.io/"
 baseurl: ""
 
