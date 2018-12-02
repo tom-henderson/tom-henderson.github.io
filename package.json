@@ -1,0 +1,16 @@
+{
+    "name": "tomhenderson.github.io",
+    "version": "0.0.1",
+    "devDependencies": {
+        "jquery": "3.2.1",
+        "fitvids": "2.0.0",
+        "bourbon": "5.1.0"
+    },
+    "author": "Tom Henderson",
+    "license": "MIT",
+    "scripts": {
+        "prebuild": "npm install",
+        "build": "cp ./node_modules/jquery/dist/jquery.min.js ./assets/js/jquery.min.js && cp ./node_modules/fitvids/dist/fitvids.min.js ./assets/js/fitvids.min.js && rm -rf ./_sass/bourbon/* && cp -r ./node_modules/bourbon/core/ ./_sass/bourbon/",
+        "postbuild": "rm -rf ./node_modules"
+    }
+}
