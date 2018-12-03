@@ -78,7 +78,7 @@ body
   margin: 0 auto
   position: relative
   padding: 0
-  @include box-sizing(border-box)
+  box-sizing: border-box
   @include respond-to(800)
     padding: 0 $rs
   .blog-logo
@@ -140,7 +140,7 @@ body
   width: 100%
   max-width: 640px
   margin: 0 auto
-  @include box-sizing(border-box)
+  box-sizing: border-box
   @include respond-to(800)
     padding: 0 $rs*2
   article
@@ -269,7 +269,7 @@ body
       right: 30%
       z-index: 9
       font-family: $font-sans
-      @include box-sizing(border-box)
+      box-sizing: border-box
       @include respond-to(800)
         left: $rs
         right: $rs
@@ -453,7 +453,7 @@ body
     .isLeft
       float: left
       width: 47%
-      @include box-sizing(border-box)
+      box-sizing: border-box
       @include respond-to(800)
         width: 100%
         padding-bottom: $rs*2
@@ -492,7 +492,7 @@ body
     .isRight
       float: right
       width: 47%
-      @include box-sizing(border-box)
+      box-sizing: border-box
       @include respond-to(800)
         width: 100%
       .index-headline
