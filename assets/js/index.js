@@ -24,7 +24,7 @@
         });
 
         // Fit videos to width of the container
-        fitvids(".post-content");
+        $(".post-content").fitVids();
 
         // Creates Captions from Alt tags
         $(".post-content img").each(function() {
