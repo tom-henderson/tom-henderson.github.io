@@ -1,0 +1,12 @@
+{
+    "name": "tomhenderson.github.io",
+    "version": "0.0.1",
+    "devDependencies": {
+        "jquery": "3.2.1",
+        "vanilla-fitvids": "1.1.0",
+        "font-awesome": "4.7.0",
+        "bourbon": "5.1.0"
+    },
+    "author": "Tom Henderson",
+    "license": "MIT"
+}
