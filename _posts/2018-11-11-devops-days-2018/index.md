@@ -3,7 +3,6 @@ layout: post
 title: DevOps Days 2018
 comments: true
 
-covers_path: /assets/images/posts/2018-11-11-devops-days-2018/
 books:
  - title: Drive
    author: Daniel H. Pink

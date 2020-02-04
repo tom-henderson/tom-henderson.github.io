@@ -2,7 +2,7 @@
     <a name="reading-list"></a>
     {% for book in page.books %}
     <div class="book cf">
-        {% if book.cover %}<img class="book-cover" src="{{ page.covers_path }}{{ book.cover }}" />{% endif %}
+        {% if book.cover %}<img class="book-cover" src="{{ book.cover }}" />{% endif %}
         <h4>{{ book.title }}<br /><small>{{ book.author }}</small></h4>
         {% if book.rating %}<div class="book-rating">{{ book.rating }}</div>{% endif %}
         {% if book.comments %}<p>{{ book.comments }}</p>{% endif %}

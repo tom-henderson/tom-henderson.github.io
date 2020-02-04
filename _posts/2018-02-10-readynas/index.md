@@ -27,4 +27,4 @@ syscontact Tom Henderson
 11. You should now be able to connect to the NAS over SNMP
 12. Finally we need to make sure snmpd starts if the system reboots, by running `ln -s ../init.d/snmpd /etc/rc3.d/S99smnp`
 
-![ReadyNAS in Observium](/assets/images/posts/2018-02-10-readynas/readynas_snmp.png)
+![ReadyNAS in Observium](readynas_snmp.png)

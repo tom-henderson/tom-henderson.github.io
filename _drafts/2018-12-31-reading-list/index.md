@@ -5,7 +5,6 @@ image: /assets/headers/ugur-akdemir-664735-unsplash.jpg
 image_credit: Ugur Akdemir
 image_url: https://unsplash.com/photos/XT-o5O458as
 
-covers_path: /assets/images/posts/2018-12-31-reading-list/
 books:
  - title: Origin
    author: Dan Brown

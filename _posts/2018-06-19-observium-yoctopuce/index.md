@@ -31,6 +31,6 @@ It took me a bit of digging around to work out what I needed to change to get th
 
 After enabling unix agent polling for the server, Observium picks it up based on the `<<<yoctopuce>>>` header in the output and creates an RRD for each sensor.
 
-![Observium Minigraphs](/assets/images/posts/2018-06-19-observium-yoctopuce/charts.png)
+![Observium Minigraphs](charts.png)
 
-![Temperature Detail](/assets/images/posts/2018-06-19-observium-yoctopuce/charts-big.png)
+![Temperature Detail](charts-big.png)

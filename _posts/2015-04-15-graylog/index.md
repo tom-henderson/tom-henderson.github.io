@@ -31,7 +31,7 @@ Finally, change the password for the ``ubuntu`` user on the VM with ``passwd`` a
 
 You can now access the server on the IP address we set above and log in with username ``admin`` and the password you set earlier. You may want to add a DNS record for the new server at this point.
 
-![Graylog Login Screen](/assets/images/posts/2015-04-15-graylog/graylog-login.png)
+![Graylog Login Screen](graylog-login.png)
 
 ### Configure Inputs
 
@@ -67,4 +67,4 @@ To apply the new config, reload the nxlog service.
 
 You should now be able to log in to your Graylog server and see log data coming in under the Sources tab.
 
-![Graylog Log Sources](/assets/images/posts/2015-04-15-graylog/graylog-data.png)
+![Graylog Log Sources](graylog-data.png)

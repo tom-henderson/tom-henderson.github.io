@@ -18,10 +18,10 @@ git commit -a -m "Wiki backup $(date +%F-%s)"
 git push
 {% endhighlight %}
 
-![Backup History](/assets/images/posts/2015-04-08-dokuwiki-github/github-wiki.png)
+![Backup History](github-wiki.png)
 
 Git is smart about this, so if nothing has changed, nothing is pushed. Backup history can be easily viewed by looking at the commits history.
 
 The best part about this is that since the data is just text, all our documentation is now available directly on GitHub. In the event of a major outage I can browse the wiki pages directly on GitHub.
 
-![Accessing Wiki Pages on GitHub](/assets/images/posts/2015-04-08-dokuwiki-github/github-wiki-pages.png)
+![Accessing Wiki Pages on GitHub](github-wiki-pages.png)
