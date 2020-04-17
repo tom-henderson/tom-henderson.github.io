@@ -16,4 +16,3 @@ You can find me online at the links below.
  * [Twitter](https://twitter.com/tomhenderson)
  * [Instagram](http://instagram.com/tomhenderson)
  * [Facebook](https://www.facebook.com/tom.henderson.nz)
-
