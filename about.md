@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-image: /assets/headers/puzzle.jpg
+image: /assets/headers/cloud-gate.jpg
 permalink: /about/
 ---
 
