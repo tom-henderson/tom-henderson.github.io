@@ -38,6 +38,8 @@ top_nav_pages:
     url: /projects/
   - title: About
     url: /about/
+  - title: Links
+    url: /links/
 
 # social icons and sharing options
 social:
