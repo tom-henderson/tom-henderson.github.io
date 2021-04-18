@@ -34,12 +34,10 @@ baseurl: ""
 top_nav_pages:
   - title: Blog
     url: /
-  - title: About
-    url: /about/
   - title: Projects
     url: /projects/
-  - title: Contact
-    url: /contact/
+  - title: About
+    url: /about/
 
 # social icons and sharing options
 social:
