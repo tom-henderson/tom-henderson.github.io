@@ -6,6 +6,7 @@ $(document).ready(function() {
       dataType: "json",
       success: function (data) {
         Tempo.prepare("tempo-template").render(data);
+        $('#tempo-template').removeClass('hide')
       },
       error: function (xhr, status) {}
     });

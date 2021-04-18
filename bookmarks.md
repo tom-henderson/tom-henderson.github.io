@@ -1,12 +1,12 @@
 ---
-layout: page
-title: Links
+layout: default
+title: Bookmarks
 image: /assets/headers/dead-trees.jpg
-permalink: /links/
+permalink: /bookmarks/
 ---
 
 {% raw %}
-<div class="cf frame" id="tempo-template">
+<div class="cf frame hide" id="tempo-template">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article" data-template>
         <div class="article-item">
             <header class="post-header">
