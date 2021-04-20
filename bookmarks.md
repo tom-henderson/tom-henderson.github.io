@@ -26,4 +26,4 @@ permalink: /bookmarks/
 {% endraw %}
 
 <script src="{{ "/assets/js/tempo.js" | prepend: site.baseurl }}" defer></script>
-<script src="{{ "/assets/js/links.js" | prepend: site.baseurl }}" defer></script>
+<script src="{{ "/assets/js/bookmarks.js" | prepend: site.baseurl }}" defer></script>
