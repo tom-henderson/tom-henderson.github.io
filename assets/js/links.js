@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("running")
     $.ajax({
       url: "https://frozen-plateau-22554.herokuapp.com/api/recent/",
       crossDomain: true,
