@@ -34,6 +34,8 @@ baseurl: ""
 top_nav_pages:
   - title: Blog
     url: /
+  - title: Bookmarks
+    url: /bookmarks/
   - title: Projects
     url: /projects/
   - title: About
