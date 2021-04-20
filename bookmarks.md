@@ -15,7 +15,7 @@ permalink: /bookmarks/
                 </h2>
             </header>
             <section class="post-excerpt" itemprop="description">
-                <p>{{ description }}</p>
+                <p>{{ description | removemarkdown ''}}</p>
             </section>
             <div class="post-meta">
                 <time datetime="{{ date_added | date 'D MMMM YYYY' }}">{{ date_added | date 'D MMMM YYYY' }}</time>
