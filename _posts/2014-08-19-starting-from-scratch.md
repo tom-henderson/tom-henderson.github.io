@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Starting from scratch
-comments: true
 image: /assets/headers/truck.jpg
 ---
 

@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Colour Picker
-comments: true
 image: /assets/headers/abstract-blurred-lines-colorful-370.jpg
 image_credit: Sebastian Muller
 image_url: https://unsplash.com/photos/VLdaxYyXJvw

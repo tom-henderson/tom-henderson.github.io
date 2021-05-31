@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Restoring a Failed Hard Drive from Backblaze
-comments: true
 image: /assets/headers/aziz-acharki-285336-unsplash.jpg
 image_credit: Aziz Acharki
 image_url: https://unsplash.com/photos/7IlaJn7GTFE

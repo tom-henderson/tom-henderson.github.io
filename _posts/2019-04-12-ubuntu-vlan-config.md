@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Adding VLAN Interfaces to Ubuntu
-comments: true
 ---
 
 I'm in the process of rebuilding my home network, splitting the network into separate VLANs. My Ubuntu server is connected to a trunk port on my switch, and I need to create virtual interfaces to allow it to access all of the VLANs I've set up. It turns out this is fairly straightforward.

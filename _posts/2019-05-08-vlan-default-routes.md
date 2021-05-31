@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Adding default routes to VLAN interfaces
-comments: true
 ---
 
 After adding [VLAN interfaces]({% post_url 2019-04-12-ubuntu-vlan-config %}) to my server, I discovered that using the interfaces independently (eg `curl --interface enp1s0.10 example.com`) wouldn't work. Because the default route on the system is via `enp1s0`, the router drops the packet since the gateway for `enp1s0` [has no route back to the source of the packet](https://superuser.com/a/1261116) (at least I *think* that's what's happening ¯\\\_(ツ)_/¯). To make sure packets exit the system from the correct interface we need to add a new route table for each VLAN. We can do this using the `post-up` commands after defining the interfaces in `/etc/network/interfaces`.

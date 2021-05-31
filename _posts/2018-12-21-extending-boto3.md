@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Extending Boto3
-comments: true
 ---
 
 > All of Boto3's resource and client classes are generated at runtime. This means that you cannot directly inherit and then extend the functionality of these classes because they do not exist until the program actually starts running.

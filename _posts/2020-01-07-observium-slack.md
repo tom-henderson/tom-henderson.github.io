@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Observium CE Slack Integration
-comments: true
 ---
 
 The last CE release of Observium (19.8.10000) removed several alert transports that are now only available in their paid edition.

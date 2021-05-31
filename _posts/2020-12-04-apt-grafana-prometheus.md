@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Monitoring APT Updates with Grafana & Prometheus
-comments: true
 ---
 
 # Pending Update Metrics

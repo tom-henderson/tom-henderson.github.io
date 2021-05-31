@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Backing up DokuWiki to GitHub
-comments: true
 ---
 
 [DokuWiki](https://www.dokuwiki.org/dokuwiki#) is a simple wiki that stores it's data in plaintext files instead of a database. It's an ideal tool for internal documentation, especially since it can be easily configured to authenticate against Active Directory, and use ACLs to controll access to wiki sections.

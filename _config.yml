@@ -77,3 +77,11 @@ social:
     share_url:
     share_title:
     share_link:
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true

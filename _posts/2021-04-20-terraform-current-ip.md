@@ -1,7 +1,5 @@
 ---
-layout: post
 title: Accessing your current IP in Terraform
-comments: true
 ---
 
 Even with session manager for accessing instances, sometimes it's handy to just open up a port to your current IP address - to allow access to a load balancer for example. One quick way to do this is with an [external data source](https://registry.terraform.io/providers/hashicorp/external/latest/docs/data-sources/data_source).
