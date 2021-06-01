@@ -13,8 +13,8 @@ I decided to split my restore into two downloads. Once Backblaze was done zippin
 
 I installed the [Backblaze Downloader](https://www.backblaze.com/blog/restore-downloader-apps-available/), and set it to restore the smaller file using 10 threads. The result was pretty impressive, maintaining over 70Mbps on my 100Mbps connection.
 
-![Backblaze Downloading](/assets/images/posts/2018-06-04-backblaze/downloading-edgerouter.png)
-![Backblaze Downloading](/assets/images/posts/2018-06-04-backblaze/downloader-activity-monitor.png)
+![Backblaze Downloading](/assets/images/posts/downloading-edgerouter.png)
+![Backblaze Downloading](/assets/images/posts/downloader-activity-monitor.png)
 
 Once the first file was downloaded and the zip extracted (to a new drive) I felt confident that this was going to be a piece of cake, and kicked off the second download. The download ran at 65 - 70Mbps for most of Sunday and Monday (except when it was paused so I could watch Netflix). By Monday evening the download was finished. It was only when I tried to extract the archive that things started going wrong.
 
@@ -31,7 +31,7 @@ appropriate BINARY mode and that you have compiled UnZip properly)
 
 I opened a Backblaze support ticket to find out the archives had a checksum I could use to verify the download (none is displayed on the download page). After a bit of back and forth I discovered that there is no checksum generated on their end that I could use, and their suggestion was to create a new restore and try the download again. Unfortunately the second download attempt was much slower.
 
-![Backblaze Downloading](/assets/images/posts/2018-06-04-backblaze/observium.png)
+![Backblaze Downloading](/assets/images/posts/observium.png)
 
 Clearly something was throttling my download speed. I restarted everything I could thing of, and reinstalled the downloader, but nothing seemed to make any difference. Backblaze support assured me they don't throttle the downloads, and suggested increasing the number of threads used by the downloader. 
 

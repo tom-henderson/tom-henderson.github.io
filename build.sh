@@ -1,5 +1,11 @@
 #!/bin/bash
 
+for file in assets/images/posts/*; do 
+    if ! grep -q "$file" _posts/*; then
+        echo "WARNING: Image $file not used in any post"
+    fi
+done
+
 npm install
 
 cp ./node_modules/jquery/dist/jquery.min.js ./assets/js/jquery.min.js

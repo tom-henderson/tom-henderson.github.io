@@ -46,7 +46,7 @@ DPkg::Post-Invoke {
 
 As long as `APT::Periodic::Update-Package-Lists` is set in `/etc/apt/apt.conf.d/10periodic`, pending updates will now be exported as metrics via `node_exporter`. If unnattended-upgrades is installed and configured the metrics will also go back down as updates are installed automatically.
 
-![](/assets/images/posts/2020-12-04-apt-grafana-prometheus/pending-updates.png)
+![](/assets/images/posts/pending-updates.png)
 
 # Automatic Update Annotations
 
@@ -142,4 +142,4 @@ if [[ -f ${ANNOTATION_TMP} ]]; then
 fi
 {% endhighlight %}
 
-![](/assets/images/posts/2020-12-04-apt-grafana-prometheus/annotations.png)
+![](/assets/images/posts/annotations.png)

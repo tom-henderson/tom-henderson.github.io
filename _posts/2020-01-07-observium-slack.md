@@ -14,7 +14,7 @@ To use the script in Observium, create a new contact using the external program 
 /opt/bin/slack.py -c "#alarming" -u "Observium" -i "observium" --colour "$(echo ${OBSERVIUM_ALERT_STATE} | sed 's/ALERT/danger/g' | sed 's/RECOVER/good/g')" -m "*<${OBSERVIUM_ALERT_URL}|${OBSERVIUM_ALERT_STATE}>: <$(echo ${OBSERVIUM_DEVICE_LINK} | grep -oE 'http[^"]*')|${OBSERVIUM_DEVICE_HOSTNAME}> ${OBSERVIUM_ENTITY_TYPE} ${OBSERVIUM_ENTITY_DESCRIPTION}*\n*Metric:* ${OBSERVIUM_METRICS}\n*Duration:* ${OBSERVIUM_DURATION}\n*Uptime:* ${OBSERVIUM_DEVICE_UPTIME}"
 {% endhighlight %}
 
-![](/assets/images/posts/2020-01-07-observium-slack/config.png)
+![](/assets/images/posts/config.png)
 
 Breaking that down, since it's a bit hard to read, first we have the script being called with the channel, username and icon `/opt/bin/slack.py -c "#alarming" -u "Observium" -i "observium"`.
 
@@ -35,7 +35,7 @@ Finally the actual message payload (broken down with new lines added):
 
 This should result in alerts that look a bit like this:
 
-![](/assets/images/posts/2020-01-07-observium-slack/alert.png)
+![](/assets/images/posts/alert.png)
 
 If you want to customise the message you can use any of these variables which should be available in the script's execution environment (found in `includes/alerts.inc.php`):
 

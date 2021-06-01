@@ -12,4 +12,4 @@ The script is run every minute by cron and writes the metrics to the `collector.
 
 {% gist b65f59018700f4a3526f38bf2760b963 %}
 
-![](/assets/images/posts/2020-11-06-docker-volume-metrics/chart.png)
+![](/assets/images/posts/chart.png)

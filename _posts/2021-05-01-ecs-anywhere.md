@@ -49,8 +49,8 @@ sudo bash /tmp/ecs-anywhere-install.sh --region $REGION --cluster $CLUSTER_NAME 
 
 That's really all there is to it. The instances should appear in the ECS cluster console with instance IDs beginning with `mi-`.
 
-![ECS cluster with on-premise instances](/assets/images/posts/2021-05-01/ecs-console.png)
+![ECS cluster with on-premise instances](/assets/images/posts/ecs-console.png)
 
 Now that our cluster is up and running we can create a task definition and deploy it to our servers. Here I've just used the [example task definition](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-anywhere-runtask.html) from the docs.
 
-![ECS Service running on on-premise instances](/assets/images/posts/2021-05-01/ecs-service.png)
+![ECS Service running on on-premise instances](/assets/images/posts/ecs-service.png)
