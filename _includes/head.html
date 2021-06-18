@@ -17,6 +17,8 @@
 
   <link rel="shortcut icon" href="{{ site.avatar }}">
 
+  <meta property="og:image" content="{% if page.image %}{{ page.image | prepend: site.baseurl | prepend: site.url }}{% else %}{{ site.cover | prepend: site.baseurl | prepend: site.url }}{% endif %}">
+
   <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
   <link rel="stylesheet" type="text/css" media="screen" href="{{ "/assets/css/font-awesome.min.css" | prepend: site.baseurl }}" />
   <link rel="stylesheet" type="text/css" media="screen" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}" />
