@@ -27,8 +27,8 @@ Built with Django, this ordering platform integrates directly with the bakery's 
 
 A custom Django based authentication page for a UniFi WiFi captive portal. The appearance of the page can be customised for each location using the portal, and promotional images can be uploaded to the admin site.
 
-![Customer Login with Advertising](/assets/images/posts/2015-05-12-unifi-python/unifi-custom-portal.png)
-![Admin Site](/assets/images/posts/2015-05-12-unifi-python/unifi-custom-portal-config.png)
+![Customer Login with Advertising](/assets/images/posts/unifi-custom-portal.png)
+![Admin Site](/assets/images/posts/unifi-custom-portal-config.png)
 
 ### Rasberry Pi Digital Advertising
 <a class="icon-github" href="https://github.com/tom-henderson/pi-projector"><i class="fa fa-github"></i></a>
