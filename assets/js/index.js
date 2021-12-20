@@ -13,15 +13,15 @@
         $(window).on('resize', layout_page);
 
         // Fade out header image on scroll
-        $(window).on('scroll', function() {
-            var top = $(window).scrollTop();
+        // $(window).on('scroll', function() {
+        //     var top = $(window).scrollTop();
 
-            if (top < 0 || top > 1500) { return; }
+        //     if (top < 0 || top > 1500) { return; }
 
-            $('.post-image-image, .teaserimage-image')
-                .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
-                .css('opacity', 1-Math.max(top/700, 0));
-        });
+        //     $('.post-image-image, .teaserimage-image')
+        //         .css('transform', 'translate3d(0px, '+top/3+'px, 0px)')
+        //         .css('opacity', 1-Math.max(top/700, 0));
+        // });
 
         // Fit videos to width of the container
         $(".post-content").fitVids();
