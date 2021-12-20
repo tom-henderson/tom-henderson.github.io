@@ -61,6 +61,8 @@ body
   position: relative
   overflow: hidden
   background-color: #000
+  @include respond-to(710)
+    height: 300px
   .teaserimage-image
     background-size: cover
     background-position: center
@@ -168,6 +170,7 @@ body
       font-size: 20px
       line-height: 1.3
       color: #666665
+      overflow: hidden
     .post-meta
       font-size: 14px
       color: #b3b3b1
