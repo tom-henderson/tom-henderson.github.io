@@ -32,25 +32,30 @@ This generates an xml file with 3 filters:
 
 To build this inside Gmail I would need to remember to add all the conditions and actions for every rule - forgetting to add the `list` condition to the last rule would delete everything from that address, not just messages to that list.
 
-It’s also easy to make quite complex rules, although the yaml does get a bit harder to read:
+It’s also easy to make fairly complex rules:
 
 {% highlight yaml %}
-wordlist: &wordlist
-  - webcast
-  - webinar
-  - workshop
-  - scrum
 
 - from:
-    not:
-      - work.com
-      - example.com
+    all:
+      - -work.com
+      - -example.com
   more:
-    - subject: { any: [*wordlist] }
+    - subject: 
+        any:
+          - webcast
+          - webinar
+          - workshop
+          - scrum
       label: Webinars
       archive: true
 
-    - has: { any: [*wordlist] }
+    - has:
+        any:
+          - webcast
+          - webinar
+          - workshop
+          - scrum
       label: Webinars
       archive: true
 {% endhighlight %}
