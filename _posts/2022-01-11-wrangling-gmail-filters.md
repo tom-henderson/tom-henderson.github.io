@@ -25,9 +25,10 @@ By combining rule definitions using the `more` operator the rules are much simpl
 {% endhighlight %}
 
 This generates an xml file with 3 filters:
-• Everything from the mailing list is labeled with `Some List`, and archived.
-• If the subject matches `Some annoying notification ` it will /also/ be marked as read.
-• If the sender is `something-noisy@example.com` it will be deleted.
+
+ 1. Everything from the mailing list is labeled with `Some List`, and archived.
+ 2. If the subject matches `Some annoying notification ` it will be marked as read.
+ 3. If the sender is `something-noisy@example.com` it will be deleted.
 
 To build this inside Gmail I would need to remember to add all the conditions and actions for every rule - forgetting to add the `list` condition to the last rule would delete everything from that address, not just messages to that list.
 
