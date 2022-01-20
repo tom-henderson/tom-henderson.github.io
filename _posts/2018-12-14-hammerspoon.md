@@ -6,15 +6,15 @@ The recent [security vulnerability](https://bugs.chromium.org/p/project-zero/iss
 
 After a bit of digging it turns out that the thumb rest button is sending `Ctrl` + `Alt` + `Tab`, which can be easily bound to opening the Mission Control app:
 
-{% highlight lua %}
+```lua
 hs.hotkey.bind({"alt", "ctrl"}, "Tab", function()
     hs.application.launchOrFocus("Mission Control.app")
 end)
-{% endhighlight %}
+```
 
 To capture the mouse buttons we can use `hs.eventtap`, and send the back and forward shortcuts if the current application is chrome:
 
-{% highlight lua %}
+```lua
 hs.eventtap.new(hs.eventtap.event.types.middleMouseUp, function(event)
 
     button = event:getProperty(hs.eventtap.event.properties.mouseEventButtonNumber)
@@ -32,4 +32,4 @@ hs.eventtap.new(hs.eventtap.event.types.middleMouseUp, function(event)
         end
     end
 end):start()
-{% endhighlight %}
+```

@@ -6,23 +6,23 @@ I'm in the process of rebuilding my home network, splitting the network into sep
 
 First we install the `vlan` and add the `8021q` kernel module.
 
-{% highlight bash %}
+```bash
 sudo apt-get install vlan
 sudo modprobe 8021q
-{% endhighlight %}
+```
 
 Next we can create the virtual interfaces, in my case they will share the `enp1s0` interface:
 
-{% highlight bash %}
+```bash
 sudo vconfig add enp1s0 10
 sudo vconfig add enp1s0 20
 sudo vconfig add enp1s0 30
 sudo vconfig add enp1s0 40
-{% endhighlight %}
+```
 
 Since I'm using DHCP for everything I set up `/etc/network/interfaces` as follows. You could alternatively set your virtual interfaces as `static` and manually configure the IP, netmask, gateway etc.
 
-{% highlight bash %}
+```bash
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
 
@@ -51,16 +51,16 @@ iface enp1s0.30 inet dhcp
 auto enp1s0.40
 iface enp1s0.40 inet dhcp
 	vlan-raw-device enp1s0
-{% endhighlight %}
+```
 
 We can now bring these interfaces up, and they should be reachable from their respective VLANs:
 
-{% highlight bash %}
+```bash
 sudo ifup enp1s0.10
 sudo ifup enp1s0.20
 sudo ifup enp1s0.30
 sudo ifup enp1s0.40
-{% endhighlight %}
+```
 
 One issue I ran into was that I couldn't access the virtual interfaces from other VLANs. For example a client on `VLAN10` could ping this server on it's `VLAN10` address, but not on `VLAN20`. To get around this we need to change the [Reverse Path Filtering](https://www.theurbanpenguin.com/rp_filter-and-lpic-3-linux-security/) setting in `/etc/sysctl.d/10-network-security.conf`. 
 
@@ -71,7 +71,7 @@ One issue I ran into was that I couldn't access the virtual interfaces from othe
 
 In my case I want incoming packets on the VLAN interfaces to be able to route to other VLANS, so we can set this to 2. 
 
-{% highlight bash %}
+```bash
 # Turn on Source Address Verification in all interfaces to
 # prevent some spoofing attacks.
 net.ipv4.conf.default.rp_filter=1
@@ -88,6 +88,6 @@ net.ipv4.conf.enp1s0/40.rp_filter=2
 # should remain more stable, with a trade off of some loss of TCP
 # functionality/features (e.g. TCP Window scaling).
 net.ipv4.tcp_syncookies=1
-{% endhighlight %}
+```
 
 After restarting the networking service `sudo service networking restart` the server is now reachable on all interfaces.

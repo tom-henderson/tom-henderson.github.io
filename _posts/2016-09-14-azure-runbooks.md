@@ -26,7 +26,7 @@ To add the script we go to the runbooks tab in the Automation Account and create
 
 I now have this running hourly so if my home IP changes the VPN will come back up automatically the next time it runs.
 
-{% highlight powershell %}
+```powershell
 $connectionName = "AzureRunAsConnection"
 try {
     $servicePrincipalConnection = Get-AutomationConnection -Name $connectionName         
@@ -69,4 +69,4 @@ if ($localGateway.GatewayIpAddress -ne $localGatewayIP) {
 } else {
     Write-Output "Gateway IP is correct: $localGatewayIP"
 }
-{% endhighlight %}
+```

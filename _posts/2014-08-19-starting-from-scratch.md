@@ -86,7 +86,7 @@ Git isn't actually installed by default, but if you run it you get an install pr
 
 Worth rebooting after this. 
 
-{% highlight bash %}
+```bash
 cd ~
 git clone https://github.com/tom-henderson/dotfiles.git
 ln -s dotfiles/bash_profile .bash_profile
@@ -96,20 +96,20 @@ ln -s dotfiles/scripcs .scr
 ./dotfiles/keyboard-shortcuts.sh
 ./dotfiles/config-osx.sh
 reboot
-{% endhighlight %}
+```
 
 ### SSH
-{% highlight bash %}
+```bash
 ssh-keygen -t rsa -C "${myemail}"
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
-{% endhighlight %}
+```
 
 ### Virtualenvwrapper
-{% highlight bash %}
+```bash
 easy_install pip
 pip install virtualenvwrapper
-{% endhighlight %}
+```
 
 ### Jekyll:
 
@@ -138,31 +138,31 @@ I really need to get my SublimeText configuration into git.
 
 Do this before opening Messages. Restores all the message history, attachments etc.
 
-{% highlight bash %}
+```bash
 cp /Volumes/Backup/Users/tom/Library/Messages ~/Library/
 cp /Volumes/Backup/Users/tom/Library/Containers/com.apple.iChat ~/Library/Containers/
-{% endhighlight %}
+```
 
 ### Microsoft User Data
 
 Why do they insist on dumping this in ~/Documents?
 
-{% highlight bash %}
+```bash
 mv ~/Documents/Microsoft\ User\ Data ~/Library/Preferences
-{% endhighlight %}
+```
 
 ### ColorSync Profiles
 
 It took far to long to get my work monitor looking right. I'm not doing it again.
-{% highlight bash %}
+```bash
 cp /Volumes/Backup/Users/tom/Library/ColorSync/profiles ~/Library/ColorSync/
-{% endhighlight %}
+```
 
 ### Color Pickers, Swatches and Palettes
-{% highlight bash %}
+```bash
 cp /Volumes/Backup/Users/tom/Library/ColorPickers ~/Library/
 cp /Volumes/Backup/Users/tom/Library/Colors ~/Library/
-{% endhighlight %}
+```
 
 ## Finishing Up
 

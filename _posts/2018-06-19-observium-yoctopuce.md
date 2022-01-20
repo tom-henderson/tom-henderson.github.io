@@ -16,12 +16,12 @@ The agent is normally configured to execute using xinetd. On macOS we can use la
 
 After loading the agent it can be tested by running `telnet 127.0.0.1 36602`, which will spit out the output of the script above and then disconnect.
 
-{% highlight txt %}
+```txt
 <<<yoctopuce>>>
 temperature:rack:20
 humidity:rack:55
 pressure:rack:1.016
-{% endhighlight %}
+```
 
 It took me a bit of digging around to work out what I needed to change to get this data into Observium. I'm running the CE edition, which is a bit out of date now so things could have changed since this release. Since `temperature`, `pressure` and `humidity` are already built in sensor types, this seems to be all that's needed to get the sensors discovered. I saved it into `/opt/observium/includes/polling/unix-agent/yoctopuce.inc.php`.
 

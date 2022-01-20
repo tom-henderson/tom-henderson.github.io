@@ -10,9 +10,9 @@ Since the external program transport still exists we can create a reasonable rep
 
 To use the script in Observium, create a new contact using the external program transport, and set the path to the following (making sure you have the path to `slack.py` correct at the start).
 
-{% highlight bash %}
+```bash
 /opt/bin/slack.py -c "#alarming" -u "Observium" -i "observium" --colour "$(echo ${OBSERVIUM_ALERT_STATE} | sed 's/ALERT/danger/g' | sed 's/RECOVER/good/g')" -m "*<${OBSERVIUM_ALERT_URL}|${OBSERVIUM_ALERT_STATE}>: <$(echo ${OBSERVIUM_DEVICE_LINK} | grep -oE 'http[^"]*')|${OBSERVIUM_DEVICE_HOSTNAME}> ${OBSERVIUM_ENTITY_TYPE} ${OBSERVIUM_ENTITY_DESCRIPTION}*\n*Metric:* ${OBSERVIUM_METRICS}\n*Duration:* ${OBSERVIUM_DURATION}\n*Uptime:* ${OBSERVIUM_DEVICE_UPTIME}"
-{% endhighlight %}
+```
 
 ![](/assets/images/posts/config.png)
 
@@ -20,18 +20,18 @@ Breaking that down, since it's a bit hard to read, first we have the script bein
 
 Next we set the `--color` parameter based on the value of `$OBSERVIUM_ALERT_STATE`. This adds a green or red bar to the side of the message block.
 
-{% highlight bash %}
+```bash
 "$(echo ${OBSERVIUM_ALERT_STATE} | sed 's/ALERT/danger/g' | sed 's/RECOVER/good/g')"
-{% endhighlight %}
+```
 
 Finally the actual message payload (broken down with new lines added):
 
-{% highlight bash %}
+```bash
 "*<${OBSERVIUM_ALERT_URL}|${OBSERVIUM_ALERT_STATE}>: <$(echo ${OBSERVIUM_DEVICE_LINK} | grep -oE 'http[^"]*')|${OBSERVIUM_DEVICE_HOSTNAME}> ${OBSERVIUM_ENTITY_TYPE} ${OBSERVIUM_ENTITY_DESCRIPTION}*\n
 *Metric:* ${OBSERVIUM_METRICS}\n
 *Duration:* ${OBSERVIUM_DURATION}\n
 *Uptime:* ${OBSERVIUM_DEVICE_UPTIME}"
-{% endhighlight %}
+```
 
 This should result in alerts that look a bit like this:
 
@@ -39,7 +39,7 @@ This should result in alerts that look a bit like this:
 
 If you want to customise the message you can use any of these variables which should be available in the script's execution environment (found in `includes/alerts.inc.php`):
 
-{% highlight bash %}
+```bash
 ALERT_ID
 ALERT_MESSAGE
 ALERT_STATE
@@ -62,4 +62,4 @@ ENTITY_NAME
 ENTITY_TYPE
 METRICS
 TITLE
-{% endhighlight %}
+```

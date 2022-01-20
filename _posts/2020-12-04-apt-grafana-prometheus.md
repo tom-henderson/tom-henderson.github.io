@@ -8,7 +8,7 @@ APT conveniently has some hooks available to run custom scripts before, during a
 
 First we need a script to get the number of updates available, and if a reboot is required. We are leaning on the script in the `update-notifier-common` package, which outputs the number of updates, and security updates pending.
 
-{% highlight bash %}
+```bash
 #!/bin/bash -e
 # /usr/share/apt-metrics
 
@@ -29,11 +29,11 @@ echo "apt_security_upgrades_pending ${SECURITY}"
 echo "# HELP node_reboot_required Node reboot is required for software updates."
 echo "# TYPE node_reboot_required gauge"
 echo "node_reboot_required ${REBOOT}"
-{% endhighlight %}
+```
 
 We set up the `APT::Update::Post-Invoke-Success` and `DPkg::Post-Invoke` triggers to call this script, which will update our metric after each apt update run, and after each package installation step. 
 
-{% highlight bash %}
+```bash
 # /etc/apt/apt.conf.d/60prometheus-metrics
 APT::Update::Post-Invoke-Success {
   "/usr/share/apt-metrics | sponge /var/lib/node_exporter/textfile_collector/apt.prom || true"
@@ -42,7 +42,7 @@ APT::Update::Post-Invoke-Success {
 DPkg::Post-Invoke {
   "/usr/share/apt-metrics | sponge /var/lib/node_exporter/textfile_collector/apt.prom || true"
 };
-{% endhighlight %}
+```
 
 As long as `APT::Periodic::Update-Package-Lists` is set in `/etc/apt/apt.conf.d/10periodic`, pending updates will now be exported as metrics via `node_exporter`. If unnattended-upgrades is installed and configured the metrics will also go back down as updates are installed automatically.
 
@@ -54,26 +54,26 @@ We can take it a step further and add Grafana annotations for automatic updates 
 
 We need to add an `environment` file for `apt-daily-upgrade.service` to pass in some additional options to the `apt-daily-upgrade` service. This will run our `/usr/share/annotate` script when the update job starts and stops.
 
-{% highlight bash %}
+```bash
 # /etc/systemd/system/apt-daily-upgrade.service.d/environment
 [Service]
 EnvironmentFile=-/etc/environment
 ExecStartPre=-/usr/share/annotate -d 3
 ExecStartPost=-/usr/share/annotate
-{% endhighlight %}
+```
 
 We also add another apt hook to record the details of each package before it is installed. This will be pushed as the body of the annotation once the apt run is complete.
 
-{% highlight bash %}
+```bash
 # /etc/apt/apt.conf.d/60annotations
 DPkg::Pre-Install-Pkgs {
 	"/usr/share/annotate -p - || true";
 };
-{% endhighlight %}
+```
 
 The `annotate` script does most of the work. When updates start it creates an annotation in Grafana, and keeps a record if it under `/var/run`. When patching is complete the script updates the annotation to add an end time, and updates the body of the annotation with the details of the installed patches. The script calls [grafana-annotation.py](https://gist.github.com/tom-henderson/4552c3e933941a5a986fed404b8b09ff) to create the annotations, which is a simple wrapper around the annotation API calls. 
 
-{% highlight bash %}
+```bash
 #!/bin/bash -e
 # /usr/share/anotate
 
@@ -140,6 +140,6 @@ if [[ -f ${ANNOTATION_TMP} ]]; then
     rm -f ${ANNOTATION_LOG} || true
     exit 0
 fi
-{% endhighlight %}
+```
 
 ![](/assets/images/posts/annotations.png)

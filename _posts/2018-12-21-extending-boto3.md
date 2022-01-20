@@ -8,7 +8,7 @@ It is still possible to extend `boto3` using the [events system](https://boto3.a
 
 As an example, we can add a new class for `ec2.Instance` to inherit from with a convenience method for reading tags:
 
-{% highlight python %}
+```python
 import boto3
 
 class InstanceExtras(object):
@@ -30,12 +30,12 @@ session.events.register(
     'creating-resource-class.ec2.Instance',
     add_custom_instance_class
 )
-{% endhighlight %}
+```
 
 This new session object can then be used normally, and whenever an `ec2.Instance` is returned it will inherit our new method.
 
-{% highlight python %}
+```python
 ec2 = session.resource('ec2')
 instance = ec2.instances(InstanceId='i-123456abc')
 name = instance.get_tag('Name') # Will return the Name tag
-{% endhighlight %}
+```

@@ -20,22 +20,22 @@ With Azure configured, we just need to tell the EdgeRouter to connect. These set
 
 To get the public IP address of your new Azure Virtual Nerwork Gateway, you can use:
 
-{% highlight powershell %}
+```powershell
 $remoteGatewayIP = Get-AzureRmPublicIpAddress -Name $remoteGatewayIPAddressName -ResourceGroupName $resourceGroup
 Write-Host $remoteGatewayIP.IpAddress
-{% endhighlight %}
+```
 
 If you need to add additional VPNs - perhaps to a second subscription - set up the Azure side, and create a new site-to-site-peer on the EdgeRouter. You can reuse the same esp-group and ike-group.
 
 After saving the configuration you should be able to see the active connection in the EdgeRouter CLI with `show vpn ipsec status`, which should return something like:
 
-{% highlight bash %}
+```bash
 IPSec Process Running PID: 1703
 
 1 Active IPsec Tunnels
 
 IPsec Interfaces :
         pppoe0  (123.123.123.123)
-{% endhighlight %}
+```
 
 With the VPN up we can now build Azure VMs in the AzureSubnet of our Virtual Network without creating a public IP for each one.

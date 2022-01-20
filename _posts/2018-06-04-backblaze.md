@@ -18,7 +18,7 @@ I installed the [Backblaze Downloader](https://www.backblaze.com/blog/restore-do
 
 Once the first file was downloaded and the zip extracted (to a new drive) I felt confident that this was going to be a piece of cake, and kicked off the second download. The download ran at 65 - 70Mbps for most of Sunday and Monday (except when it was paused so I could watch Netflix). By Monday evening the download was finished. It was only when I tried to extract the archive that things started going wrong.
 
-{% highlight bash %}
+```bash
 $ unzip Server_4-27-21-44-11.zip -d /Volumes/Mercury/
 Archive: Server_4-27-21-44-11.zip
 warning [Server_4-27-21-44-11.zip]: 122632979645 extra bytes at beginning or within zipfile
@@ -27,7 +27,7 @@ error [Server_4-27-21-44-11.zip]: start of central directory not found;
 zipfile corrupt.
 (please check that you have transferred or created the zipfile in the
 appropriate BINARY mode and that you have compiled UnZip properly)
-{% endhighlight %}
+```
 
 I opened a Backblaze support ticket to find out the archives had a checksum I could use to verify the download (none is displayed on the download page). After a bit of back and forth I discovered that there is no checksum generated on their end that I could use, and their suggestion was to create a new restore and try the download again. Unfortunately the second download attempt was much slower.
 

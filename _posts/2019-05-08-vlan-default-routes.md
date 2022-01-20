@@ -6,7 +6,7 @@ After adding [VLAN interfaces]({% post_url 2019-04-12-ubuntu-vlan-config %}) to 
 
 An example VLAN interface might look like:
 
-{% highlight bash %}
+```bash
 auto enp1s0.10
 iface enp1s0.10 inet static
 	vlan-raw-device enp1s0
@@ -16,7 +16,7 @@ iface enp1s0.10 inet static
 	post-up ip route add default via 10.10.0.1 dev enp1s0.10 table 10
 	post-up ip rule add from 10.10.0.5/32 table 10
 	post-up ip rule add to 10.10.0.5/32 table 10
-{% endhighlight %}
+```
 
 The interface gets its own route table (`table 10` for simplicity I've numbered these to match the VLAN tag). On that table we add a route to the `10.10.0.0/24` network from the `enp1s0.10` with source address `10.10.0.5`, and set the default route via `10.10.0.1`. We then add two rules to use this table for all packets to or from the interface's address.
 
@@ -24,19 +24,19 @@ Once the interface is up we can now use the VLAN interfaces directly.
 
 The new route table can be shown with:
 
-{% highlight bash %}
+```bash
 $ ip route list table 10
 default via 10.10.0.1 dev enp1s0.10
 10.10.0.0/24 dev enp1s0.10 scope link src 10.10.0.5
-{% endhighlight %}
+```
 
 And the routing rules with:
 
-{% highlight bash %}
+```bash
 $ ip rule list
 0:	from all lookup local
 32764:	from all to 10.10.0.5 lookup 10
 32765:	from 10.10.0.5 lookup 10
 32766:	from all lookup main
 32767:	from all lookup default
-{% endhighlight %}
+```

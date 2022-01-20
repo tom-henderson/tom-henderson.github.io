@@ -6,9 +6,9 @@ Wrote a little script recently to send volume size metrics to prometheus. I'm al
 
 The script is run every minute by cron and writes the metrics to the `collector.textfile.directory` path used by `node_exporter`.
 
-{% highlight bash %}
+```bash
 * * * * * docker-volume-metrics.sh | sponge {{ prometheus_textfile_collector_path }}/docker-volumes.prom
-{% endhighlight %}
+```
 
 {% gist b65f59018700f4a3526f38bf2760b963 %}
 

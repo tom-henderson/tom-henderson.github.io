@@ -10,7 +10,7 @@ I started by exporting my current rules as a backup, and then worked through the
 
 By combining rule definitions using the `more` operator the rules are much simpler to parse. For example, I like to label mailing lists and move them out of the inbox. By using `more` I can then selectively mark as read or delete. 
 
-{% highlight yaml %}
+```yaml
 - list: <list.name>
   label: "Some List"
   archive: true
@@ -22,7 +22,7 @@ By combining rule definitions using the `more` operator the rules are much simpl
     - from: something-noisy@example.com
       read: true
       delete: true
-{% endhighlight %}
+```
 
 This generates an xml file with 3 filters:
 
@@ -34,8 +34,7 @@ To build this inside Gmail I would need to remember to add all the conditions an
 
 It’s also easy to make fairly complex rules:
 
-{% highlight yaml %}
-
+```yaml
 - from:
     all:
       - -work.com
@@ -58,7 +57,7 @@ It’s also easy to make fairly complex rules:
           - scrum
       label: Webinars
       archive: true
-{% endhighlight %}
+```
 
 By not having any actions in the top level element, this creates two rules, which both include the `not` filter at the top.
 

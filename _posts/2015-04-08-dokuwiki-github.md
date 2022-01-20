@@ -8,13 +8,13 @@ As part of a backup review process I've been moving towards reducing the amount 
 
 I added a new machine user to our GitHub account and set it up with ssh keys, created a new repository, and pushed the current state of the wiki to it. I then added a simple nightly cron job to commit and push any changes. 
 
-{% highlight bash %}
+```bash
 #!/bin/bash
 
 cd /var/www
 git commit -a -m "Wiki backup $(date +%F-%s)"
 git push
-{% endhighlight %}
+```
 
 ![Backup History](/assets/images/posts/github-wiki.png)
 

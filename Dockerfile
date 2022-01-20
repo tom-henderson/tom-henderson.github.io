@@ -5,6 +5,7 @@ RUN apk --no-cache --update add \
     npm
 
 RUN gem install \
+    redcarpet \
     github-pages
 
 WORKDIR /srv

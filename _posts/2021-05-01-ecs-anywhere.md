@@ -6,7 +6,7 @@ AWS finally released [ECS Anywhere](https://aws.amazon.com/ecs/anywhere/) last w
 
 We need a couple of bits of supporting infrastructure first: an IAM role for our on-premise hosts, and an ECS cluster.
 
-{% highlight terraform %}
+```terraform
 data "aws_iam_policy_document" "assume_role_policy_ssm" {
   statement {
     effect = "Allow"
@@ -36,16 +36,16 @@ resource "aws_iam_role_policy_attachment" "amazon_ec2_container_service_for_ec2_
 resource "aws_ecs_cluster" "cluster" {
   name = "ECS-Anywhere"
 }
-{% endhighlight %}
+```
 
 Once that's done we need to create an authorisation for each managed instance we want to add with `aws ssm create-activation --iam-role ECSAnywhereRole`. This returns an `ActivationId` and `ActivationCode`, which will be used to register the instances with Systems Manager.
 
 Finally we are ready to create the cluster. On each machine we just need to download the provided install script, and run it, passing in the region, cluster name and SSM activation codes.
 
-{% highlight bash %}
+```bash
 curl --proto "https" -o "/tmp/ecs-anywhere-install.sh" "https://amazon-ecs-agent.s3.amazonaws.com/ecs-anywhere-install-latest.sh"
 sudo bash /tmp/ecs-anywhere-install.sh --region $REGION --cluster $CLUSTER_NAME --activation-id $ACTIVATION_ID --activation-code $ACTIVATION_CODE
-{% endhighlight %}
+```
 
 That's really all there is to it. The instances should appear in the ECS cluster console with instance IDs beginning with `mi-`.
 
