@@ -1,85 +1,47 @@
-# Build settings
+# Dependencies
 markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
-
+  extensions:
+    - no_intra_emphasis
+    - tables
+    - autolink
+    - strikethrough
+    - with_toc_data
 highlighter: rouge
 plugins: 
   - jekyll-paginate
   - jekyll-gist
 
 # Site settings
-title: "Tom Henderson"
-description: >
-   What I've worked out so far
-
-email: tomhenderson@mac.com
-
-timezone: Pacific/Auckland
-
-# blog cover
-cover: "/assets/images/pepsi.jpg"
-avatar: "/assets/images/avatar2.png"
-
-name: 'Tom Henderson'
-author: 'Tom Henderson'
-
-paginate: 7
-future: false
-show_drafts: false
-
-comments: true
-disqus_shortname: tom-henderson
-
+title: Tom Henderson
+tagline: "What I've worked out so far."
+description: "What I've worked out so far."
 url: "http://tom-henderson.github.io/"
-baseurl: ""
+baseurl: /
+paginate: 5
+recent: 3
+timezone: Pacific/Auckland
+favicon: "/assets/images/avatar.png"
 
-top_nav_pages:
-  - title: Blog
-    url: /
-  - title: Bookmarks
-    url: /bookmarks/
-  - title: Projects
-    url: /projects/
-  - title: About
-    url: /about/
+disqus:
+  enabled: true
+  shortname: tom-henderson
 
-# social icons and sharing options
+author:
+  name: 'Tom Henderson'
+  author: 'Tom Henderson'
+
 social:
-  - icon: github
+  - title: Github
     url: https://github.com/tom-henderson
-    desc: Fork me on github
-    share_url:
-    share_title:
-    share_link:
-
-  - icon: twitter
+  - title: Twitter
     url: https://twitter.com/tomhenderson
-    desc: Twitter
-    share_url:
-    share_title:
-    share_link:
-
-  - icon: star-o
+  - title: Bookmarks
     url: https://frozen-plateau-22554.herokuapp.com/
-    desc: Bookmarks
-    share_url:
-    share_title:
-    share_link:
-
-  - icon: rss
+  - title: RSS
     url: /feed.xml
-    desc: Subscribe
-    share_url:
-    share_title:
-    share_link:
-
-  - icon: envelope
+  - title: Email
     url: mailto:tomhenderson@mac.com
-    desc: Email
-    share_url:
-    share_title:
-    share_link:
 
 defaults:
   - scope:

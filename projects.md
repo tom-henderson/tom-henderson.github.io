@@ -1,17 +1,12 @@
 ---
 layout: page
 title: Projects
-image: /assets/headers/keyboard.jpg
 permalink: /projects/
 ---
 
-## Projects
+### [Bookmarks](https://github.com/tom-henderson/bookmarks)
 
-### Bookmarks
-<a class="icon-github" href="https://github.com/tom-henderson/bookmarks"><i class="fa fa-github"></i></a>
-<a class="icon-external-link" href="https://frozen-plateau-22554.herokuapp.com/"><i class="fa fa-external-link"></i></a>
-
-To replace my del.icio.us account I built a simple CRUD bookmarks managager in Django and deployed on Heroku. It uses django-taggit for tagging and markdown for formatting the descriptions. I exported my existing bookmarks from del.icio.us, and imported them with a custom admin command.
+To replace my del.icio.us account I built a simple CRUD [bookmarks manager](https://frozen-plateau-22554.herokuapp.com) in Django and deployed on Heroku. It uses django-taggit for tagging and markdown for formatting the descriptions. I exported my existing bookmarks from del.icio.us, and imported them with a custom admin command.
 
 ![Bookmarks](/assets/images/projects/bookmarks.png)
 
@@ -30,20 +25,8 @@ A custom Django based authentication page for a UniFi WiFi captive portal. The a
 ![Customer Login with Advertising](/assets/images/posts/unifi-custom-portal.png)
 ![Admin Site](/assets/images/posts/unifi-custom-portal-config.png)
 
-### Rasberry Pi Digital Advertising
-<a class="icon-github" href="https://github.com/tom-henderson/pi-projector"><i class="fa fa-github"></i></a>
+### [Rasberry Pi Digital Advertising](https://github.com/tom-henderson/pi-projector)
 
 A custom digital signage system using Raspberry Pi's connected to projectors to display menus and advertising.
 
 ![Testing the projector](/assets/images/projects/projector-image.jpg)
-
-### New Zealand Earthquakes Monitor
-<a class="icon-github" href="https://github.com/tom-henderson/eqnz"><i class="fa fa-github"></i></a>
-
-Created to get some familiarity of iOS development, this app pulls earthquake data from geonet.org and displays it on a map.
-
-### Static Map Generator
-<a class="icon-github" href="https://github.com/tom-henderson/static-map-generator"><i class="fa fa-github"></i></a>
-<a class="icon-external-link" href="http://tom-henderson.github.io/static-map-generator/"><i class="fa fa-external-link"></i></a>
-
-Web page for generating static map images using the Google Maps Static Map API.

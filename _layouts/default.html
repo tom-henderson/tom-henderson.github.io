@@ -1,39 +1,15 @@
----
----
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 
   {% include head.html %}
 
-  <body>
+  <body class="theme-base-xx">
 
-    <a href="/" class="logo-readium"><span class="logo" style="background-image: url({{ site.avatar }})"></span></a>
+    {% include sidebar.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-
-        <div class="teaserimage">
-            <div class="teaserimage-image" {% if page.image %}style="background-image: url({{ page.image }})"{% elsif site.cover %}style="background-image: url({{ site.cover }})"{% endif %}>
-                Teaser Image
-            </div>
-        </div>
-
-        <header class="blog-header">
-          <h1 class="blog-title">{{ site.title }}</h1>
-          <h2 class="blog-description">{{ site.description }}</h2>
-          {% include nav_bar.html %}
-        </header>
-
-        <main class="content" role="main">
-          {{ content }}
-        </main>
-
-      </div>
+    <div class="content container">
+      {{ content }}
     </div>
 
-    {% include page_footer.html %}
-    {% include javascripts.html %}
-    {% include analytics.html %}
   </body>
-
 </html>
