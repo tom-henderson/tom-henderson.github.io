@@ -91,6 +91,14 @@ html {
   display: block;
   line-height: 1.75;
 }
+@media (min-width: 48em) {
+  .sidebar-nav-item {
+    display: inline-block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
   text-decoration: underline;
