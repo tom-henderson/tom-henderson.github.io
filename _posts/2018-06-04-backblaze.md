@@ -1,8 +1,5 @@
 ---
 title: Restoring a Failed Hard Drive from Backblaze
-image: /assets/headers/aziz-acharki-285336-unsplash.jpg
-image_credit: Aziz Acharki
-image_url: https://unsplash.com/photos/7IlaJn7GTFE
 ---
 
 I was recently unlucky enough to discover one of the external drives attached to my Plex server had failed. The drive actually appeared ok in Finder - the way I found out was actually a warning email from Backblaze explaining that the drive hadn't been connected for 14 days. If I'd been watching more TV I might have noticed the issue earlier. I have the server backed up to Backblaze, and since we have a pretty decent fiber connection I assumed it wouldn't be too much of an issue to just download the backup.

@@ -1,41 +1,8 @@
 ---
+layout: default
 ---
-<!DOCTYPE html>
-<html>
 
-  {% include head.html %}
-
-  <body itemscope itemtype="http://schema.org/Article">
-
-    <a href="/" class="logo-readium"><span class="logo" style="background-image: url({{ site.avatar }})"></span></a>
-
-    <div class="page-content">
-      <div class="wrapper">
-
-        <div class="teaserimage">
-            <div class="teaserimage-image" {% if page.image %}style="background-image: url({{ page.image }})"{% endif %}>
-                Teaser Image
-            </div>
-        </div>
-
-        <header class="blog-header">
-          <h1 class="blog-title">{{ site.title }}</h1>
-          <h2 class="blog-description">{{ site.description }}</h2>
-          {% include nav_bar.html %}
-        </header>
-
-        <main class="content post" role="main">
-          <div class="post-content">
-            {{ content }}
-          </div>
-        </main>
-
-      </div>
-    </div>
-
-    {% include page_footer.html %}
-    {% include javascripts.html %}
-    {% include analytics.html %}
-  </body>
-
-</html>
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {{ content }}
+</div>

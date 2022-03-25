@@ -1,6 +1,5 @@
 ---
 title: Starting from scratch
-image: /assets/headers/truck.jpg
 ---
 
 I've always been slighly proud of the fact that my OS X home folder has stayed with me for so long, across so many devices. It started life on our PowerMac G4, and has stayed with me through my 12" Powerbook, and my previous 13" Powerbook since 2010. 
