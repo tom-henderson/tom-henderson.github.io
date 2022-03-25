@@ -17,7 +17,7 @@ title: Tom Henderson
 tagline: "What I've worked out so far."
 description: "What I've worked out so far."
 url: "http://tom-henderson.github.io/"
-baseurl: /
+baseurl: "/"
 paginate: 5
 recent: 3
 timezone: Pacific/Auckland
