@@ -226,10 +226,10 @@ a.sidebar-nav-item:focus {
 .theme-base-0d .sidebar {
   background-color: #6a9fb5;
 }
-/* .theme-base-0d .content a,
+.theme-base-0d .content a,
 .theme-base-0d .recent-posts li a:hover {
   color: #6a9fb5;
-} */
+}
 
 /* Magenta */
 .theme-base-0e .sidebar {
@@ -251,6 +251,5 @@ a.sidebar-nav-item:focus {
 
 /* Custom */
 .theme-base-xx .sidebar {
-  background-color: #454545;
+  background-color: #069;
 }
-
