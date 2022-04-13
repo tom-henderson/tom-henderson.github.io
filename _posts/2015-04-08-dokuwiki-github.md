@@ -2,9 +2,9 @@
 title: Backing up DokuWiki to GitHub
 ---
 
-[DokuWiki](https://www.dokuwiki.org/dokuwiki#) is a simple wiki that stores it's data in plaintext files instead of a database. It's an ideal tool for internal documentation, especially since it can be easily configured to authenticate against Active Directory, and use ACLs to controll access to wiki sections.
+[DokuWiki](https://www.dokuwiki.org/dokuwiki#) is a simple wiki that stores it's data in plaintext files instead of a database. It's an ideal tool for internal documentation, especially since it can be easily configured to authenticate against Active Directory, and use ACLs to control access to wiki sections.
 
-As part of a backup review process I've been moving towards reducing the amount of data we back up unnecessarily. In particular there's not much reason to back up entire servers when they can be rebuilt from scratch so easily. With that in mind it seemed like the simplest way to back up dokuwiki would be to use GitHub, with the added advantage of having versioned backups.
+As part of a backup review process I've been moving towards reducing the amount of data we back up unnecessarily. In particular there's not much reason to back up entire servers when they can be rebuilt from scratch so easily. With that in mind it seemed like the simplest way to back up DokuWiki would be to use GitHub, with the added advantage of having versioned backups.
 
 I added a new machine user to our GitHub account and set it up with ssh keys, created a new repository, and pushed the current state of the wiki to it. I then added a simple nightly cron job to commit and push any changes. 
 

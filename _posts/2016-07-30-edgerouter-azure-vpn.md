@@ -18,7 +18,7 @@ With Azure configured, we just need to tell the EdgeRouter to connect. These set
 
 {% gist c32eed662edb5eaa034f6f9a0ae7fb7f %}
 
-To get the public IP address of your new Azure Virtual Nerwork Gateway, you can use:
+To get the public IP address of your new Azure Virtual Network Gateway, you can use:
 
 ```powershell
 $remoteGatewayIP = Get-AzureRmPublicIpAddress -Name $remoteGatewayIPAddressName -ResourceGroupName $resourceGroup

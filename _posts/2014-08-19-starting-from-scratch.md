@@ -2,7 +2,7 @@
 title: Starting from scratch
 ---
 
-I've always been slighly proud of the fact that my OS X home folder has stayed with me for so long, across so many devices. It started life on our PowerMac G4, and has stayed with me through my 12" Powerbook, and my previous 13" Powerbook since 2010. 
+I've always been slightly proud of the fact that my OS X home folder has stayed with me for so long, across so many devices. It started life on our PowerMac G4, and has stayed with me through my 12" PowerBook, and my previous 13" PowerBook since 2010. 
 
 Apple's Migration Assistant has come a long way since the first time I used it, and for users at work I don't hesitate to use it to move their settings from machine to machine. When an account has been around as long as mine though it does pick up a fair amount of cruft, so I figured it was time to rebuild.
 
@@ -48,7 +48,7 @@ In no particular order. I was surprised at how many of these just needed a log i
  * [SuperDuper](http://www.shirt-pocket.com/SuperDuper/SuperDuperDescription.html)
  * [VLC](http://www.videolan.org/)
  * [Spotify](http://spotify.com/): Log in, done.
- * [Notational Velocity](http://notational.net/): Log in to simplenote to sync.
+ * [Notational Velocity](http://notational.net/): Log in to Simplenote to sync.
  * [Transmission](https://www.transmissionbt.com/)
  * [Beamer](http://beamer-app.com/)
  * [TextExpander](http://smilesoftware.com/TextExpander/index.html)
@@ -62,7 +62,7 @@ It's a shame the 'Purchases' tab doesn't show free apps, and that there's no way
  * Evernote
  * Skitch
  * NameMangler
- * Caffiene
+ * Caffeine
  * Xcode
 
 ### System Utilities

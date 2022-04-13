@@ -2,7 +2,7 @@
 title: Azure Automation with Runbooks
 ---
 
-Running PowerShell scripts against Azure requires a fair bit of setup - we need a windows computer, Azure PowerShell componants, a suitable network to run from etc - and if we need to run them regularly that computer needs to stay online. Fortunately there's a better way.
+Running PowerShell scripts against Azure requires a fair bit of setup - we need a windows computer, Azure PowerShell components, a suitable network to run from etc - and if we need to run them regularly that computer needs to stay online. Fortunately there's a better way.
 
 By adding an Automation Account to a subscription we can upload scripts ('runbooks'), and have them run on a schedule, or connect them to a webhook to allow other systems to trigger them by making an http request. There are also tools to integrate with GitHub so your runbooks are stored safely in version control.
 
