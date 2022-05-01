@@ -2,7 +2,7 @@
 title: Monitoring APT Updates with Grafana & Prometheus
 ---
 
-# Pending Update Metrics
+## Pending Update Metrics
 
 APT conveniently has some hooks available to run custom scripts before, during and after patching. We can take advantage of these to publish a metrics file that can be picked up by `node_exporter` to monitor the status of pending updates across our servers.
 
@@ -48,7 +48,7 @@ As long as `APT::Periodic::Update-Package-Lists` is set in `/etc/apt/apt.conf.d/
 
 ![](/assets/images/posts/pending-updates.png)
 
-# Automatic Update Annotations
+## Automatic Update Annotations
 
 We can take it a step further and add Grafana annotations for automatic updates activity, to show what updates are being installed. These annotations are stored in Grafana, against a specific dashboard. In these examples my dasbboard ID is 3. I've also added a Grafana API key in /etc/environment to allow us to push annotations.
 

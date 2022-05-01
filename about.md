@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# Hi! 👋 
+## Hi! 👋 
 
 I am a Site Reliability Engineer working in Auckland, New Zealand. I work on our AWS, Windows, Linux and Docker infrastructure; CI/CD environments; observability tools, and various other cloudy things. Any opinions on this site are my own and not those of my employers.
 
