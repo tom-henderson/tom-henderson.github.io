@@ -6,7 +6,7 @@ permalink: /projects/
 
 ## [Bookmarks](https://github.com/tom-henderson/bookmarks)
 
-To replace my del.icio.us account I built a simple CRUD [bookmarks manager](https://frozen-plateau-22554.herokuapp.com) in Django and deployed on Heroku. It uses django-taggit for tagging and markdown for formatting the descriptions. I exported my existing bookmarks from del.icio.us, and imported them with a custom admin command.
+To replace my del.icio.us account I built a simple CRUD [bookmarks manager](https://bookmarks.thx.nz) in Django. It uses django-taggit for tagging and markdown for formatting the descriptions. I exported my existing bookmarks from del.icio.us, and imported them with a custom admin command.
 
 ![Bookmarks](/assets/images/projects/bookmarks.png)
 
