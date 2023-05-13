@@ -16,7 +16,7 @@ The only minor gotcha is the need to disable legacy mode for the knob in Zigbee2
     legacy: false
 ```
 
-To control Sonos I've set up three automations in Home Assistant: rotate right / left for Up / Down, and single press to select the line in source. For the volume automations I added a condition to check that the Office Sonos is actually playing, to avoid being deafened after using it as a fidget toy when nothing is playing.
+To control Sonos I've set up three automations in Home Assistant: rotate right / left for volume up and down, and single press to select the line in source. For the volume automations I added a condition to check that the Office Sonos is actually playing, to avoid being deafened after using it as a fidget toy when nothing is playing.
 
 ### Volume Up / Down Automation
 
