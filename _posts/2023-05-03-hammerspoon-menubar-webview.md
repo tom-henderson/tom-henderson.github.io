@@ -1,5 +1,5 @@
 ---
-title: Control Sonos from the Menu Bar using HomeAssistant and Hammerspoon
+title: Control Sonos from the Menu Bar using Home Assistant and Hammerspoon
 ---
 
 We have a Sonos setup at home which I love. In my office I have a [Sonos Port](https://www.sonos.com/en-nz/shop/port) connected to my turntable and some powered speakers. I've been tinkering with [Home Assistant](https://www.home-assistant.io/) recently, and the Sonos integration works really well, so I decided to build a little menu bar app to pull up my AV dashboard. 
