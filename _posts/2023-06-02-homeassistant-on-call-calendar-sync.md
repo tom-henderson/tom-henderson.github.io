@@ -4,6 +4,8 @@ title: Syncing an On Call Calendar to Home Assistant
 
 I thought it might be useful if [Home Assistant](https://www.home-assistant.io/) knew when I was on call. I could use this to make sure the office doesn't get too cold overnight, or to send me a notification if I leave home without my laptop.
 
+![Home Assistant Notification](/assets/images/posts/on-call.jpg)
+
 We use [PagerDuty](https://www.pagerduty.com/), which gives you an iCal calendar feed, so I assumed I could just use this. Unfortunately while Home Assistant has integrations for [Local Calendars](https://www.home-assistant.io/integrations/local_calendar/) and [CalDAV](https://www.home-assistant.io/integrations/caldav/), neither of these support just fetching a single `.ics` file over http.
 
 After a bit of digging around I discovered that Home Assistant stores local calendars in the `.storage` folder alongside its config files, so I figured I can just overwrite this file manually using a `shell_command`. You need to create the calendar first (under Settings > Devices & Services > Add Integration > Local Calendar). Once it's created, add an event to get Home Assistant to create the local calendar file. 
