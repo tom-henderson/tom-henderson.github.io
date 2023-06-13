@@ -20,6 +20,7 @@ url: "http://tom-henderson.github.io/"
 baseurl: ""
 paginate: 5
 recent: 3
+alertyears: 5
 timezone: Pacific/Auckland
 favicon: "/assets/images/avatar.png"
 
