@@ -1,5 +1,8 @@
 ---
 title: Docker Volume Size Metrics for Prometheus
+tags:
+ - docker
+ - observability
 ---
 
 Wrote a little script recently to send volume size metrics to prometheus. I'm already using cadvisor which provides a `container_fs_usage_bytes` metric with labels for `container_label_com_docker_compose_project` and `container_label_com_docker_compose_service`, but I wanted a bit more detail on where data was being used.

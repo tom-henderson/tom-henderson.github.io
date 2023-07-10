@@ -1,5 +1,7 @@
 ---
 title: EdgeRouter L2TP Remote Access VPN
+tags: 
+ - networking
 ---
 
 With the release of iOS10 and macOS Sierra, [Apple has removed PPTP](https://support.apple.com/en-nz/HT206844) as a supported VPN connection. Previously [I had set up a PPTP VPN]({% post_url 2016-06-30-edgerouter-vpn %}) for remote access to my home network, so to keep this working I needed to switch to another type of VPN. iOS supports L2TP, IKEv2 and IPSec, and of these the EdgeRouter only supports L2TP as a remote access VPN.

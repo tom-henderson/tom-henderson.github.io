@@ -1,5 +1,7 @@
 ---
 title: Athena Partition Projection
+tags: 
+ - aws
 ---
 
 We can make sure Athena only reads as much data as it needs for a particular query by partitioning our data. We do this by storing the data files in a Hive folder structure that represents the patitions we'll use in our queries.

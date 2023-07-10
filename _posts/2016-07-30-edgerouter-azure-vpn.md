@@ -1,5 +1,8 @@
 ---
 title: Site to Site VPN into Azure with EdgeRouter
+tags: 
+ - networking
+ - azure
 ---
 
 These scripts are based on the instructions in the [Azure Documentation](https://azure.microsoft.com/en-us/documentation/articles/vpn-gateway-create-site-to-site-rm-powershell/).

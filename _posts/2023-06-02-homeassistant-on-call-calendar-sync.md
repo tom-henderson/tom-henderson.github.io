@@ -1,5 +1,7 @@
 ---
 title: Syncing an On Call Calendar to Home Assistant
+tags: 
+ - home assistant
 ---
 
 I thought it might be useful if [Home Assistant](https://www.home-assistant.io/) knew when I was on call. I could use this to make sure the office doesn't get too cold overnight, or to send me a notification if I leave home without my laptop.

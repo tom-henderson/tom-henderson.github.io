@@ -1,5 +1,8 @@
 ---
 title: ECS Anywhere
+tags: 
+ - aws
+ - docker
 ---
 
 AWS finally released [ECS Anywhere](https://aws.amazon.com/ecs/anywhere/) last week, which allows you to use ECS to schedule tasks on on-premise hosts. The whole setup is very straightforward, and it's quite reasonably priced at $0.01025 per hour for each managed ECS Anywhere on-premises instance - about $1.72 per week per host.
