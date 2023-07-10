@@ -1,5 +1,7 @@
 ---
 title: Monitoring APT Updates with Grafana & Prometheus
+tags:
+ - observability
 ---
 
 ## Pending Update Metrics

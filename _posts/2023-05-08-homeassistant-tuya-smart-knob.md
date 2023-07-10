@@ -1,5 +1,7 @@
 ---
 title: Control Sonos with MoesHouse Zigbee Smart Knob
+tags: 
+ - home assistant
 ---
 
 I picked up this neat little Zigbee knob on AliExpress to use as a volume control for Sonos. It seems pretty well made, with a strong magnet on the back to attach it to its little mounting plate (or anything else it'll stick to) and it was easy enough to connect to [Zigbee2MQTT](https://www.zigbee2mqtt.io/). 

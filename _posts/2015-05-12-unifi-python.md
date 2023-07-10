@@ -1,5 +1,9 @@
 ---
 title: Authenticate Unifi WiFi Guests with Python
+tags: 
+ - unifi
+ - django
+ - python
 ---
 
 Unifi WiFi can be configured to use a custom portal for the Guest network. As part of a large rollout of Ubiquiti access points, I built a custom guest portal in Django that would allow us to customise the appearance of the guest authentication page to match the brand of each of our locations.

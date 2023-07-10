@@ -1,5 +1,8 @@
 ---
 title: Home Assistant Apple Watch Complications
+tags: 
+ - home assistant
+ - apple watch
 ---
 
 I spent a little time recenly working out how to get Home Assistant complications working on my watch. Once you work out the inputs they want they seem to be really reliable, and they also function as a quick way to open the watch app to trigger actions and scenes.

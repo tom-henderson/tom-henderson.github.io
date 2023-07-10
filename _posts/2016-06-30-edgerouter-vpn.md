@@ -1,5 +1,7 @@
 ---
 title: EdgeRouter PPTP VPN with Dynamic IP Address
+tags: 
+ - networking
 ---
 
 ## Dynamic DNS

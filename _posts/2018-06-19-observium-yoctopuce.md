@@ -1,5 +1,8 @@
 ---
 title: Adding Yoctopuce Sensors to Observium
+tags: 
+ - observium
+ - python
 ---
 
 I came across the [Yoctopuce](https://www.yoctopuce.com/) USB sensors recently and thought it might be fun to use one to monitor the closet I keep my network rack & servers in. I picked up one of the [Yocto-Meto](https://www.yoctopuce.com/EN/products/usb-environmental-sensors/yocto-meteo) sensors, which combines humidity, pressure, and temperature sensors, and hooked it up to the server with a USB cable. 
