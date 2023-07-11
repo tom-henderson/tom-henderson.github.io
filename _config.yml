@@ -16,7 +16,7 @@ plugins:
 title: Tom Henderson
 tagline: "What I've worked out so far."
 description: "What I've worked out so far."
-url: "http://tom-henderson.github.io"
+url: "https://tom-henderson.github.io"
 baseurl: ""
 timezone: Pacific/Auckland
 favicon: "/assets/images/avatar.png"
