@@ -38,16 +38,16 @@ author:
 social:
   - title: Github
     url: https://github.com/tom-henderson
-  - title: Twitter
-    url: https://twitter.com/tomhenderson
-  - title: Mastodon
-    url: https://mastodon.nz/@tomhenderson
+  # - title: Twitter
+  #   url: https://twitter.com/tomhenderson
+  # - title: Mastodon
+  #   url: https://mastodon.nz/@tomhenderson
   - title: Bookmarks
     url: https://bookmarks.thx.nz/
   - title: RSS
     url: /feed.xml
-  - title: Email
-    url: mailto:tomhenderson@mac.com
+  # - title: Email
+  #   url: mailto:tomhenderson@mac.com
 
 defaults:
   - scope:
