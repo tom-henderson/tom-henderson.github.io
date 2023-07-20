@@ -361,6 +361,7 @@ tbody tr:nth-child(odd) th {
 .recent-posts {
   padding-left: 0;
   list-style: none;
+  text-wrap: balance;
 }
 .recent-posts h3 {
   margin-top: 0;
