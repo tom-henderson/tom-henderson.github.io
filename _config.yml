@@ -27,9 +27,11 @@ related:
   max: 5
   similarity: 1
 
-disqus:
+comments:
   enabled: true
-  shortname: tom-henderson
+  disqus:
+    enabled: true
+    shortname: tom-henderson
 
 author:
   name: 'Tom Henderson'
