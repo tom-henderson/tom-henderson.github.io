@@ -1,23 +1,17 @@
-{% if jekyll.environment == "production" %}
 {% if page.comments %}
-{% if site.comments.disqus.enabled %}
-<div id="disqus_thread" class="disqus_thread"></div>
-<script>
-var disqus_config = function () {
-    this.page.url = '{{ site.url }}/{{ page.url }}';
-    this.page.identifier = '{{ page.id }}';
-};
-
-(function() {
-    var d = document, s = d.createElement('script');
-    s.src = '//{{ site.comments.disqus.shortname }}.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-})();
+<script src="https://giscus.app/client.js"
+        data-repo="tom-henderson/tom-henderson.github.io"
+        data-repo-id="MDEwOlJlcG9zaXRvcnkxNTU5NjQzOA=="
+        data-category="General"
+        data-category-id="DIC_kwDOAO37ls4CYYDy"
+        data-mapping="og:title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
 </script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-{% endif %}
-{% endif %}
-{% else %}
-<!-- Comments not enabled in {{ jekyll.environment }} environment -->
 {% endif %}
