@@ -70,8 +70,8 @@ CREATE EXTERNAL TABLE example (
 PARTITIONED BY (date_created string)
 ROW FORMAT SERDE 'org.openx.data.jsonserde.JsonSerDe'
 LOCATION 's3://mybucket/data/'
-TABLEPROPERTIES (
-    'projection.enabled' = true
+TBLPROPERTIES (
+    'projection.enabled' = 'true',
     'projection.date_created.type' = 'date',
     'projection.date_created.format' = 'yyyy/MM/dd',
     'projection.date_created.interval' = '1',
