@@ -1,2 +1,3 @@
 #!/bin/bash
-docker run --rm -v "$(pwd):/srv" -p 4000:4000 $(DOCKER_SCAN_SUGGEST=false docker build -q .)
+docker build -t jekyll .
+docker run --rm -v "$(pwd):/srv" -p 4000:4000 jekyll

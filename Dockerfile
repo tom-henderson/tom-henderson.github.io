@@ -1,13 +1,7 @@
-FROM ruby:2.7-alpine
-
-RUN apk --no-cache --update add \
-    build-base \ 
-    npm
-
-RUN gem install \
-    redcarpet \
-    github-pages
+FROM ruby:3.3.4-bookworm
 
 WORKDIR /srv
+COPY Gemfile .
+RUN bundle install
 
 CMD ["jekyll", "serve", "-H", "0.0.0.0"]
